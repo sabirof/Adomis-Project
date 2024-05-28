@@ -1,20 +1,20 @@
 {
-    "navbar": {
-      "home": "Startseite",
-      "blog": "Blog",
-      "project": "Projekt",
-      "survey": "Umfrage",
-      "newsletter": "Newsletter",
-      "about": "Über uns",
-      "contact": "Kontakt",
-      "privacyPolicy": "Datenschutz"
-    },
-    "footer": {
-      "footerText": "Footer-Inhalt kommt hier hin"
-    },
-    "contact": {
-      "title": "Kontaktieren Sie uns",
-      "description": "Fühlen Sie sich frei, uns über das untenstehende Formular zu erreichen."
-    }
+  "lea": "Lea ist toll.",
+  "navbar": {
+    "home": "Startseite",
+    "blog": "Blog",
+    "project": "Projekt",
+    "survey": "Umfrage",
+    "newsletter": "Newsletter",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "privacyPolicy": "Datenschutz"
+  },
+  "footer": {
+    "footerText": "Footer-Inhalt kommt hier hin"
+  },
+  "contact": {
+    "title": "Kontaktieren Sie uns",
+    "description": "Fühlen Sie sich frei, uns über das untenstehende Formular zu erreichen."
   }
-  
+}
