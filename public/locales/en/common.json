@@ -1,0 +1,20 @@
+{
+    "navbar": {
+      "home": "Home",
+      "blog": "Blog",
+      "project": "Project",
+      "survey": "Survey",
+      "newsletter": "Newsletter",
+      "about": "About Us",
+      "contact": "Contact",
+      "privacyPolicy": "Privacy Policy"
+    },
+    "footer": {
+      "footerText": "Footer content goes here"
+    },
+    "contact": {
+      "title": "Contact Us",
+      "description": "Feel free to reach out to us using the form below."
+    }
+  }
+  

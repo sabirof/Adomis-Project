@@ -7,12 +7,16 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        primary: '#8545A8',   // Primärfarbe
+        secondary: '#AA4A82', // Sekundärfarbe
+        accent: '#6E5971',    // Akzentfarbe
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography')],
 };
