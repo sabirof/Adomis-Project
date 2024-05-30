@@ -1,8 +1,13 @@
+/* eslint-disable no-undef */
 // components/layout/index.jsx
+import LanguageSwitcher from '../LanguageSwitcher';
 import Footer from './Footer';
 import Navbar from './Navbar';
+import { useTranslation } from 'next-i18next';
+
 
 const Layout = ({ children }) => {
+  const { t } = useTranslation('common');
   return (
     <>
       <Navbar />

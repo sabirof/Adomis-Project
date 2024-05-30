@@ -11,10 +11,42 @@
     "privacyPolicy": "Datenschutz"
   },
   "footer": {
-    "footerText": "Footer-Inhalt kommt hier hin"
+    "description": "Footer-Inhalt kommt hier hin",
+    "aboutTitle": "Über uns",
+    "aboutContent": "Wir sind bestrebt, den bestmöglichen Service zu bieten. Erfahren Sie mehr über unsere Mission und Werte.",
+    "quickLinks": "Schnellzugriff",
+    "contactTitle": "Kontaktieren Sie uns",
+    "contactDetails": "Email: info@adomis-project.de\nTelefon: 030 209346200\nAdresse: Georgenstraße 47, 10117 Berlin",
+    "copyright": "&copy; 2024 Adomis. Alle Rechte vorbehalten."
   },
   "contact": {
     "title": "Kontaktieren Sie uns",
     "description": "Fühlen Sie sich frei, uns über das untenstehende Formular zu erreichen."
-  }
-}
+  },
+  
+    "project": {
+      "title": "Projekt",
+      "contentTitle": "Inhalt",
+      "contentDescription": "Detaillierte Inhalte hier...",
+      "methodologyTitle": "Methodik",
+      "methodologyDescription": "Detaillierte Methodik hier...",
+      "findingsTitle": "Erwartete Ergebnisse",
+      "findingsDescription": "Details zu den erwarteten Ergebnissen..."
+    },
+    
+      "about": {
+        "teamTitle": "ADOMiS Team",
+        "teamRole": "Es gibt gerade genug Platz für mehrere Zeilen Text. Nutze es gut."
+      },
+      "teamMembers": {
+        "profMirjam": "Prof. Dr. Mirjam Fischer",
+        "drEsto": "Dr. Esto Mader",
+        "lea": "Lea Luttenberger",
+        "selin": "Selin Akgöz",
+        "celine": "Celine Vallender",
+        "tbd": "n.n."
+      }
+    }
+    
+    
+

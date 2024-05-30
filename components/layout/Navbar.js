@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useTranslation } from 'next-i18next';
+import LanguageSwitcher from '../LanguageSwitcher';
 
 const Navbar = () => {
   const { t } = useTranslation('common');
@@ -20,14 +21,12 @@ const Navbar = () => {
           <li><Link href='/about'>{t('navbar.about')}</Link></li>
           <li><Link href='/contact'>{t('navbar.contact')}</Link></li>
           <li><Link href='/privacy-policy'>{t('navbar.privacyPolicy')}</Link></li>
+          
         </ul>
         <div className='flex gap-4'>
-          <Link href='/' locale='en'>
-            <img src='/images/en-flag.png' alt='English' className='h-6 w-6' />
-          </Link>
-          <Link href='/' locale='de'>
-            <img src='/images/de-flag.png' alt='German' className='h-6 w-6' />
-          </Link>
+         
+
+          <LanguageSwitcher />
         </div>
       </div>
     </nav>

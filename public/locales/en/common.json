@@ -11,10 +11,37 @@
     "privacyPolicy": "Privacy Policy"
   },
   "footer": {
-    "footerText": "Footer content goes here"
+    "description": "Footer content goes here",
+    "aboutTitle": "About Us",
+    "aboutContent": "We are dedicated to providing the best service possible. Learn more about our mission and values.",
+    "quickLinks": "Quick Links",
+    "contactTitle": "Contact Us",
+    "contactDetails": "Email: info@adomis-project.de\nPhone: 030 209346200\nAddress: Georgenstraße 47, 10117 Berlin",
+    "copyright": "&copy; 2024 Adomis. All rights reserved."
   },
   "contact": {
     "title": "Contact Us",
     "description": "Feel free to reach out to us using the form below."
+  },
+  "project": {
+    "title": "Project",
+    "contentTitle": "Content",
+    "contentDescription": "Detailed content here...",
+    "methodologyTitle": "Methodology",
+    "methodologyDescription": "Detailed methodology here...",
+    "findingsTitle": "Expected findings",
+    "findingsDescription": "Expected findings details..."
+  },
+  "about": {
+    "teamTitle": "ADOMiS Team",
+    "teamRole": "There is just enough space here for several lines of text. Use it well."
+  },
+  "teamMembers": {
+    "profMirjam": "Prof. Dr. Mirjam Fischer",
+    "drEsto": "Dr. Esto Mader",
+    "lea": "Lea Luttenberger",
+    "selin": "Selin Akgöz",
+    "celine": "Celine Vallender",
+    "tbd": "tbd"
   }
 }
