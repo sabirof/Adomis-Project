@@ -1,5 +1,5 @@
 {
-  "lea": "Lea ist toll.",
+  
   "navbar": {
     "home": "Startseite",
     "blog": "Blog",
@@ -24,15 +24,7 @@
     "description": "Fühlen Sie sich frei, uns über das untenstehende Formular zu erreichen."
   },
   
-    "project": {
-      "title": "Projekt",
-      "contentTitle": "Inhalt",
-      "contentDescription": "Detaillierte Inhalte hier...",
-      "methodologyTitle": "Methodik",
-      "methodologyDescription": "Detaillierte Methodik hier...",
-      "findingsTitle": "Erwartete Ergebnisse",
-      "findingsDescription": "Details zu den erwarteten Ergebnissen..."
-    },
+    
     
       "about": {
         "teamTitle": "ADOMiS Team",
@@ -46,7 +38,11 @@
         "celine": "Celine Vallender",
         "tbd": "n.n."
       }
-    }
+        
+        }
+      
+      
+    
     
     
 

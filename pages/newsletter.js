@@ -1,8 +1,10 @@
-// pages/newsletter.js
-
 import React from 'react';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useTranslation } from 'next-i18next';
 
 const Newsletter = () => {
+  const { t } = useTranslation('newsletter');
+
   const handleSubmit = async (event) => {
     event.preventDefault();
     // You'll need to implement what happens when the form is submitted
@@ -13,10 +15,8 @@ const Newsletter = () => {
     <div className="bg-purple-900 text-white p-10">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
         <div className="mb-4 md:mb-0">
-          <h2 className="text-3xl font-bold mb-3">Sign up for our newsletter</h2>
-          <p>
-            Stay up to date with the project progress, announcements, and exclusive content. Feel free to sign up with your email.
-          </p>
+          <h2 className="text-3xl font-bold mb-3">{t('newsletterTitle')}</h2>
+          <p>{t('newsletterDescription')}</p>
         </div>
         <div>
           <form onSubmit={handleSubmit} className="flex flex-col md:flex-row items-center">
@@ -24,7 +24,7 @@ const Newsletter = () => {
               <input
                 type="email"
                 name="email"
-                placeholder="Enter your email"
+                placeholder={t('newsletterPlaceholder')}
                 className="px-4 py-2 w-full rounded-lg focus:outline-none"
                 required
               />
@@ -33,16 +33,25 @@ const Newsletter = () => {
               type="submit"
               className="bg-green-400 text-white px-6 py-2 rounded-lg transition duration-200 hover:bg-green-600 focus:outline-none"
             >
-              Subscribe
+              {t('newsletterSubscribe')}
             </button>
           </form>
           <p className="text-gray-400 text-sm mt-3 text-center md:text-left">
-            We care about the protection of your data. Read our <a href="/privacy-policy" className="text-blue-400 underline">Privacy Policy</a>.
+            {t('newsletterPrivacy')} <a href="/privacy-policy" className="text-blue-400 underline">{t('newsletterPrivacyLink')}</a>.
           </p>
         </div>
       </div>
     </div>
   );
 };
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale ?? 'en', ['common', 'newsletter'])),
+    },
+    revalidate: 1, // Use ISR to update the cached pages
+  };
+}
 
 export default Newsletter;

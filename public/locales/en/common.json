@@ -1,5 +1,5 @@
 {
-  "lea": "Lea is cool.",
+  
   "navbar": {
     "home": "Home",
     "blog": "Blog",
@@ -23,15 +23,7 @@
     "title": "Contact Us",
     "description": "Feel free to reach out to us using the form below."
   },
-  "project": {
-    "title": "Project",
-    "contentTitle": "Content",
-    "contentDescription": "Detailed content here...",
-    "methodologyTitle": "Methodology",
-    "methodologyDescription": "Detailed methodology here...",
-    "findingsTitle": "Expected findings",
-    "findingsDescription": "Expected findings details..."
-  },
+  
   "about": {
     "teamTitle": "ADOMiS Team",
     "teamRole": "There is just enough space here for several lines of text. Use it well."
@@ -44,4 +36,10 @@
     "celine": "Celine Vallender",
     "tbd": "tbd"
   }
-}
+
+    }
+    
+    
+  
+  
+
