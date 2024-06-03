@@ -10,7 +10,7 @@ const Navbar = () => {
     <nav className='bg-primary p-8'>
       <div className='container mx-auto flex items-center justify-between'>
         <Link href='/'>
-          <img src='/images/logo.png' alt='Logo' className='h-16 w-24' />
+          <Image src='/images/logo.png' alt='Logo' className='h-16 w-24' width={50} height={50} />
         </Link>
         <ul className='text-white flex gap-4'>
           <li><Link href='/'>{t('navbar.home')}</Link></li>

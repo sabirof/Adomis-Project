@@ -7,6 +7,7 @@ import { useTranslation } from 'next-i18next';
 
 
 const Layout = ({ children }) => {
+  // eslint-disable-next-line no-unused-vars
   const { t } = useTranslation('common');
   return (
     <>

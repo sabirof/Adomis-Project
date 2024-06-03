@@ -1,6 +1,7 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
-import Layout from '../components/layout';
+import Image from 'next/image';
+
 
 export default function AboutPage() {
   const { t } = useTranslation('common');
@@ -46,7 +47,7 @@ export default function AboutPage() {
         <div className='grid grid-cols-3 gap-10 justify-items-center px-20'>
           {teamMembers.map((member, index) => (
             <div className='text-center bg-accent rounded-lg p-6' key={index}>
-              <img
+              <Image
                 src={member.imgSrc}
                 alt={member.name}
                 className='rounded-full mb-4 w-48 h-48 object-cover'

@@ -6,7 +6,7 @@ import Skeleton from '@/components/ui/Skeleton'
 import { client, previewClient } from '@/lib/contentful/client'
 import { useRouter } from 'next/router'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import Layout from '@/components/layout' // Ensure the path is correct
+
 
 const Post = ({ post, preview }) => {
   const router = useRouter()

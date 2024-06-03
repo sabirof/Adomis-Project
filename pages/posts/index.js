@@ -5,6 +5,7 @@ import PostCard from '@/components/posts/PostCard';
 import { client } from '@/lib/contentful/client';
 
 const Posts = ({ posts }) => {
+  // eslint-disable-next-line no-unused-vars
   const { t } = useTranslation('common');
 
   return (
@@ -13,7 +14,7 @@ const Posts = ({ posts }) => {
         <div className='container'>
           
           <ul className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:gap-10'>
-            {posts.map((post, i) => (
+            {posts.map((post) => (
               <PostCard key={post.fields.slug} post={post} />
             ))}
           </ul>
