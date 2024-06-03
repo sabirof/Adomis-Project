@@ -13,10 +13,10 @@ const LanguageSwitcher = () => {
   return (
     <div className="flex space-x-2">
       <button onClick={() => changeLanguage('en')} disabled={i18n.language === 'en'}>
-        <Image src="/images/en.png" alt="English" width={24} height={16} />
+        <Image src="/images/en.png" alt="English flag" width={24} height={16} />
       </button>
       <button onClick={() => changeLanguage('de')} disabled={i18n.language === 'de'}>
-        <Image src="/images/de.png" alt="Deutsch" width={24} height={16} />
+        <Image src="/images/de.png" alt="German flag" width={24} height={16} />
       </button>
     </div>
   );

@@ -2,6 +2,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
 import Carousel from '../components/Carousel';
 import { createClient } from 'contentful';
+import Image from 'next/image';
 
 const HomePage = ({ initialPosts }) => {
   const { t } = useTranslation('common');
@@ -11,7 +12,7 @@ const HomePage = ({ initialPosts }) => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto grid grid-cols-2">
           <div className="bg-white text-center flex flex-col justify-center items-center">
-            <img src="/images/logo2.png" alt="Logo" className="h-40 w-50 mb-4" />
+            <Image src="/images/logo2.png" alt="Logo" className="h-40 w-50 mb-4" width={200} height={100} />
             <p>{t('Your logo\'s tagline or additional text here')}</p>
           </div>
           <div className="bg-purple-900 text-white text-center p-8 space-y-4 relative">
@@ -55,6 +56,6 @@ export async function getStaticProps({ locale }) {
       },
     };
   }
-};
+}
 
 export default HomePage;

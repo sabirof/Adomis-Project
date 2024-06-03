@@ -3,6 +3,7 @@
 import React from 'react';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
+import Link from 'next/link';
 
 const SurveySubscribe = () => {
   const { t } = useTranslation('survey');
@@ -39,7 +40,7 @@ const SurveySubscribe = () => {
             </button>
           </form>
           <p className="text-gray-400 text-sm mt-3 text-center md:text-left">
-            {t('surveyPrivacy')} <a href="/privacy-policy" className="text-blue-400 underline">{t('surveyPrivacyLink')}</a>.
+            {t('surveyPrivacy')} <Link href="/privacy-policy" className="text-blue-400 underline">{t('surveyPrivacyLink')}</Link>.
           </p>
         </div>
       </div>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
+import Link from 'next/link';
 
 const Newsletter = () => {
   const { t } = useTranslation('newsletter');
@@ -41,8 +42,12 @@ const Newsletter = () => {
             </button>
           </form>
           <p className="text-gray-400 text-sm mt-3 text-center md:text-left">
-            {t('newsletterPrivacy')} <a href="/privacy-policy" className="text-blue-400 underline">{t('newsletterPrivacyLink')}</a>.
-          </p>
+  {t('newsletterPrivacy')}{' '}
+  <Link href="/privacy-policy">
+    <span className="text-blue-400 underline">{t('newsletterPrivacyLink')}</span>
+  </Link>.
+</p>
+
         </div>
       </div>
     </div>

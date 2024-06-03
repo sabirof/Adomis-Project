@@ -1,16 +1,16 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
 
 const Carousel = ({ posts }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
 
-  const nextSlide = () => {
+  const nextSlide = useCallback(() => {
     if (!isTransitioning) {
       setIsTransitioning(true);
       setCurrentSlide((prevSlide) => (prevSlide + 1) % posts.length);
     }
-  };
+  }, [isTransitioning, posts.length]);
 
   const setSlide = (index) => {
     if (!isTransitioning) {
@@ -25,12 +25,12 @@ const Carousel = ({ posts }) => {
     }, 5000); // Adjust this value to control the duration between slides (5000ms = 5 seconds)
 
     return () => clearTimeout(timer);
-  }, [currentSlide]);
+  }, [currentSlide, nextSlide]);
 
   return (
     <div className="relative w-full overflow-hidden">
       <div
-        className="flex transition-transform duration-3000 ease-in-out"
+        className="flex transition-transform duration-[3000ms] ease-in-out"
         style={{ width: `${posts.length * 100}%`, transform: `translateX(-${currentSlide * (100 / posts.length)}%)` }}
         onTransitionEnd={() => setIsTransitioning(false)}
       >
@@ -57,4 +57,3 @@ const Carousel = ({ posts }) => {
 };
 
 export default Carousel;
- 
