@@ -4,7 +4,7 @@ module.exports = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    loader: 'custom',
+    loader: 'default',
   },
   i18n,
 }

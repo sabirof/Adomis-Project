@@ -3,6 +3,6 @@ module.exports = {
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'de'],
-    localePath: './public/locales'
   },
-}
+  ns: ['common', 'survey'], // Add 'survey' namespace
+};

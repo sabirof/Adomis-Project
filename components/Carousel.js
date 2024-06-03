@@ -57,3 +57,4 @@ const Carousel = ({ posts }) => {
 };
 
 export default Carousel;
+ 

@@ -1,14 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
 
 const Newsletter = () => {
   const { t } = useTranslation('newsletter');
+  const [email, setEmail] = useState('');
 
-  const handleSubmit = async (event) => {
+  const handleSubmit = (event) => {
     event.preventDefault();
-    // You'll need to implement what happens when the form is submitted
-    // Typically, you'll want to send the email to your backend to add to the newsletter list
+    const subject = encodeURIComponent('Newsletter Subscription');
+    const body = encodeURIComponent(`Please add this email to the newsletter list: ${email}`);
+    window.location.href = `mailto:info@adomis-project.de?subject=${subject}&body=${body}`;
   };
 
   return (
@@ -24,6 +26,8 @@ const Newsletter = () => {
               <input
                 type="email"
                 name="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 placeholder={t('newsletterPlaceholder')}
                 className="px-4 py-2 w-full rounded-lg focus:outline-none"
                 required

@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 // components/layout/index.jsx
-import LanguageSwitcher from '../LanguageSwitcher';
+
 import Footer from './Footer';
 import Navbar from './Navbar';
 import { useTranslation } from 'next-i18next';
@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
     <>
       <Navbar />
       <main className='container p-8'>{children}</main>
-      <footer className='bg-stone-100 text-sm font-medium uppercase text-stone-400 px-8 py-4'>
+      <footer className='bg-primary text-sm font-medium uppercase text-stone-400 px-8 py-4'>
         <div className='container'>
         <Footer />
         </div>

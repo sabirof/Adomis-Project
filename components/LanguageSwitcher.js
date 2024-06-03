@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
+import Image from 'next/image';
 
 const LanguageSwitcher = () => {
   const router = useRouter();
@@ -10,12 +11,12 @@ const LanguageSwitcher = () => {
   };
 
   return (
-    <div>
+    <div className="flex space-x-2">
       <button onClick={() => changeLanguage('en')} disabled={i18n.language === 'en'}>
-        English
+        <Image src="/images/en.png" alt="English" width={24} height={16} />
       </button>
       <button onClick={() => changeLanguage('de')} disabled={i18n.language === 'de'}>
-        Deutsch
+        <Image src="/images/de.png" alt="Deutsch" width={24} height={16} />
       </button>
     </div>
   );
