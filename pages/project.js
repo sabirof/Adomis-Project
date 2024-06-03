@@ -10,7 +10,7 @@ const ProjectPage = () => {
         <h2 className="text-3xl text-black font-bold">{t('title')}</h2>
       </div>
       <section className="grid grid-cols-3 gap-4 p-20">
-        <div className="bg-purple-900 p-6">
+        <div className="bg-accent p-6">
           <h2 className="text-green-400 font-bold text-lg mb-4">{t('contentTitle')}</h2>
           <p className="text-green-400">{t('contentDescription')}</p>
         </div>

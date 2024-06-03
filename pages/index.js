@@ -12,7 +12,7 @@ const HomePage = ({ initialPosts }) => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto grid grid-cols-2">
           <div className="bg-white text-center flex flex-col justify-center items-center">
-            <Image src="/images/logo2.png" alt="Logo" className="h-40 w-50 mb-4" width={200} height={100} />
+            <Image src="/images/logo2.png" alt="Logo" className="h-40 w-50 mb-4" width={280} height={280} />
             <p>{t('Your logo\'s tagline or additional text here')}</p>
           </div>
           <div className="bg-purple-900 text-white text-center p-8 space-y-4 relative">

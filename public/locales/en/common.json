@@ -22,19 +22,6 @@
   "contact": {
     "title": "Contact Us",
     "description": "Feel free to reach out to us using the form below."
-  },
-  
-  "about": {
-    "teamTitle": "ADOMiS Team",
-    "teamRole": "There is just enough space here for several lines of text. Use it well."
-  },
-  "teamMembers": {
-    "profMirjam": "Prof. Dr. Mirjam Fischer",
-    "drEsto": "Dr. Esto Mader",
-    "lea": "Lea Luttenberger",
-    "selin": "Selin Akgöz",
-    "celine": "Celine Vallender",
-    "tbd": "tbd"
   }
 
     }
