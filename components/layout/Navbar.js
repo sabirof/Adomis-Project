@@ -13,14 +13,12 @@ const Navbar = () => {
           <Image src='/images/logo.png' alt='Logo' className='h-16 w-24' width={80} height={80} priority style={{ width: 'auto', height: 'auto' }} />
         </Link>
         <ul className='text-white flex gap-4'>
-          <li><Link href='/'>{t('navbar.home')}</Link></li>
-          <li><Link href='/posts'>{t('navbar.blog')}</Link></li>
+        <li><Link href='/'>{t('navbar.home')}</Link></li>
+          <li><Link href='/vision'>{t('navbar.vision')}</Link></li>
           <li><Link href='/project'>{t('navbar.project')}</Link></li>
-          <li><Link href='/survey'>{t('navbar.survey')}</Link></li>
-          <li><Link href='/newsletter'>{t('navbar.newsletter')}</Link></li>
+          <li><Link href='/news'>{t('navbar.news')}</Link></li>
           <li><Link href='/about'>{t('navbar.about')}</Link></li>
           <li><Link href='/contact'>{t('navbar.contact')}</Link></li>
-          <li><Link href='/privacy-policy'>{t('navbar.privacyPolicy')}</Link></li>
         </ul>
         <div className='flex gap-4'>
           <LanguageSwitcher />

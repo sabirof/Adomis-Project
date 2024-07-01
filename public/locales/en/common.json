@@ -1,14 +1,13 @@
 {
-  
   "navbar": {
     "home": "Home",
-    "blog": "Blog",
+    "news": "News",
     "project": "Project",
     "survey": "Survey",
-    "newsletter": "Newsletter",
     "about": "About Us",
     "contact": "Contact",
-    "privacyPolicy": "Privacy Policy"
+    "privacyPolicy": "Privacy Policy",
+    "vision": "Vision"
   },
   "footer": {
     "description": "Footer content goes here",
@@ -22,11 +21,16 @@
   "contact": {
     "title": "Contact Us",
     "description": "Feel free to reach out to us using the form below."
+  },
+  "newsletter": {
+    "newsletterTitle": "Sign up for our newsletter",
+    "newsletterDescription": "Stay up to date with the project progress, announcements, and exclusive content. Feel free to sign up with your email.",
+    "newsletterPlaceholder": "Enter your email",
+    "newsletterSubscribe": "Subscribe",
+    "newsletterPrivacy": "We care about the protection of your data. Read our",
+    "newsletterPrivacyLink": "Privacy Policy"
+  },
+  "news": {
+    "title": "News"
   }
-
-    }
-    
-    
-  
-  
-
+}

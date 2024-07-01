@@ -1,14 +1,14 @@
 {
-  
   "navbar": {
     "home": "Startseite",
-    "blog": "Blog",
+    "news": "Aktuelles",
     "project": "Projekt",
     "survey": "Umfrage",
     "newsletter": "Newsletter",
     "about": "Über uns",
     "contact": "Kontakt",
-    "privacyPolicy": "Datenschutz"
+    "privacyPolicy": "Datenschutz",
+    "vision": "Vision"
   },
   "footer": {
     "description": "Footer-Inhalt kommt hier hin",
@@ -22,12 +22,16 @@
   "contact": {
     "title": "Kontaktieren Sie uns",
     "description": "Fühlen Sie sich frei, uns über das untenstehende Formular zu erreichen."
+  },
+  "newsletter": {
+    "newsletterTitle": "Melden Sie sich für unseren Newsletter an",
+    "newsletterDescription": "Bleiben Sie über den Projektfortschritt, Ankündigungen und exklusive Inhalte auf dem Laufenden. Melden Sie sich gerne mit Ihrer E-Mail an.",
+    "newsletterPlaceholder": "Geben Sie Ihre E-Mail ein",
+    "newsletterSubscribe": "Abonnieren",
+    "newsletterPrivacy": "Wir kümmern uns um den Schutz Ihrer Daten. Lesen Sie unsere",
+    "newsletterPrivacyLink": "Datenschutzbestimmungen"
+  },
+  "news": {
+    "title": "Aktuelles"
   }
-        
-        }
-      
-      
-    
-    
-    
-
+}
