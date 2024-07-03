@@ -20,7 +20,7 @@ const HomePage = ({ initialPosts }) => {
             {initialPosts.map(post => (
               <div key={post.sys.id} className="blog-post-preview">
                 <Link href={`/news/${post.fields.slug}`} passHref legacyBehavior>
-                  <a className="block overflow-hidden">
+                  <div className="block overflow-hidden">
                     <Image
                       src={post.fields.coverImage ? `https:${post.fields.coverImage.fields.file.url}` : '/images/default-image.png'}
                       alt={post.fields.title}
@@ -32,7 +32,7 @@ const HomePage = ({ initialPosts }) => {
                       <h4 className="blog-post-title">{post.fields.title}</h4>
                       <p className="blog-post-excerpt">{post.fields.excerpt}</p>
                     </div>
-                  </a>
+                  </div>
                 </Link>
               </div>
             ))}

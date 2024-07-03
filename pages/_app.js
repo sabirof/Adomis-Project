@@ -1,14 +1,17 @@
-import '../public/styles/globals.css'
-import Layout from '../components/layout/index'
-import { appWithTranslation } from 'next-i18next'
+// pages/_app.js
+import '../public/styles/globals.css';
 
+import { appWithTranslation } from 'next-i18next';
+import dynamic from 'next/dynamic';
+
+const NoSSRLayout = dynamic(() => import('../components/layout/index'), { ssr: false });
 
 const MyApp = ({ Component, pageProps }) => {
   return (
-    <Layout>
+    <NoSSRLayout>
       <Component {...pageProps} />
-    </Layout>
-  )
-}
+    </NoSSRLayout>
+  );
+};
 
-export default appWithTranslation(MyApp)
+export default appWithTranslation(MyApp);

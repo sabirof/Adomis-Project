@@ -1,6 +1,7 @@
 /* eslint-disable no-undef */
 // components/layout/index.jsx
 
+import Image from 'next/image';
 import Footer from './Footer';
 import Navbar from './Navbar';
 import { useTranslation } from 'next-i18next';
@@ -13,11 +14,14 @@ const Layout = ({ children }) => {
     <>
       <Navbar />
       <main className='container p-8'>{children}</main>
-      <footer className='bg-primary text-sm font-medium uppercase text-stone-400 px-8 py-4'>
-        <div className='container'>
-        <Footer />
+      <div className="flex items-center justify-start py-4">
+        <div className="flex items-center">
+          <p className="ml-4">{t('fundedBy')}</p>
+          <Image src="/images/bua-logo.png" alt="Berlin University Alliance" width={200} height={100} />
+          
         </div>
-      </footer>
+      </div>
+      <Footer />
     </>
   );
 };

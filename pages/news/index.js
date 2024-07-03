@@ -1,6 +1,7 @@
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { createClient } from 'contentful';
+import Image from 'next/image';
 import Link from 'next/link';
 
 const NewsPage = ({ posts }) => {
@@ -9,12 +10,21 @@ const NewsPage = ({ posts }) => {
   return (
     <div className="container mx-auto py-20">
       <h2 className="text-3xl font-bold text-center mb-8">{t('news.title')}</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="blog-posts-container">
         {posts.map((post) => (
           <Link key={post.sys.id} href={`/news/${post.fields.slug}`} passHref>
-            <div className="bg-white p-6 rounded-lg shadow-md cursor-pointer">
-              <h3 className="text-xl font-bold mb-4">{post.fields.title}</h3>
-              <p>{post.fields.excerpt}</p>
+            <div className="block overflow-hidden blog-post-preview">
+              <Image
+                src={post.fields.coverImage ? `https:${post.fields.coverImage.fields.file.url}` : '/images/default-image.png'}
+                alt={post.fields.title}
+                width={300}
+                height={200}
+                className="object-cover"
+              />
+              <div className="blog-post-preview-content">
+                <h3 className="blog-post-title">{post.fields.title}</h3>
+                <p className="blog-post-excerpt">{post.fields.excerpt}</p>
+              </div>
             </div>
           </Link>
         ))}

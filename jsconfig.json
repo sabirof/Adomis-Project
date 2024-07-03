@@ -3,11 +3,13 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
-      "@/components/*":["components/*"],
+      "@/components/*": ["components/*"],
       "@/lib/*": ["lib/*"],
       "@/styles/*": ["styles/*"],
       "@/public/*": ["public/*"],
       "@/hooks/*": ["hooks/*"],
+      "@/pages/*": ["pages/*"]
     }
-  }
+  },
+  "include": ["src", "components", "lib", "styles", "public", "hooks", "pages"]
 }

@@ -1,10 +1,15 @@
 {
-    "title": "Project",
-    "contentTitle": "Content",
-    "contentDescription": "Detailed content here...",
-    "methodologyTitle": "Methodology",
-    "methodologyDescription": "Detailed methodology here...",
-    "findingsTitle": "Expected findings",
-    "findingsDescription": "Expected findings details..."
-  }
-  
+  "title": "Project",
+  "description": "Welcome to our project page. Below you will find more information about our studies.",
+  "contentTitle": "Content",
+  "contentDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "methodologyTitle": "Methodology",
+  "methodologyDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "findingsTitle": "Expected Findings",
+  "findingsDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "interviewStudyTitle": "Interview Study",
+  "interviewStudyDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "surveyStudiesTitle": "Survey Studies",
+  "surveyStudiesDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "readMore": "Read more"
+}

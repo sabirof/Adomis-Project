@@ -1,16 +1,14 @@
-import Avatar from '../ui/Avatar'
-import ContentfulImage from '../ui/ContentfulImage'
-import DateComponent from '../ui/DateComponent'
+import Avatar from '../ui/Avatar';
+import ContentfulImage from '../ui/ContentfulImage';
 
 const PostHeader = ({ post }) => {
-  const { title, coverImage, author, date } = post.fields
+  const { title, coverImage, author } = post.fields;
 
   return (
     <>
       <h2>{title}</h2>
       <div className='hidden md:flex md:justify-between md:items-center md:mb-10'>
         <Avatar name={author.fields.name} picture={author.fields.picture} />
-        <DateComponent dateString={date} className='text-sm text-gray-400' />
       </div>
       <div className='mb-8 md:mb-16 sm:mx-0'>
         <ContentfulImage
@@ -22,10 +20,9 @@ const PostHeader = ({ post }) => {
       </div>
       <div className='flex justify-between items-center md:hidden mb-6'>
         <Avatar name={author.fields.name} picture={author.fields.picture} />
-        <DateComponent dateString={date} className='text-sm text-gray-400' />
       </div>
     </>
-  )
+  );
 }
 
-export default PostHeader
+export default PostHeader;

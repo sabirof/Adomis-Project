@@ -1,5 +1,6 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
+import Link from 'next/link';
 
 const ProjectPage = () => {
   const { t } = useTranslation('project');
@@ -8,19 +9,22 @@ const ProjectPage = () => {
     <>
       <div className="text-center py-8">
         <h2 className="text-3xl text-black font-bold">{t('title')}</h2>
+        <p className="text-lg text-gray-700 mt-4">{t('description')}</p>
       </div>
-      <section className="grid grid-cols-3 gap-4 p-20">
-        <div className="bg-accent p-6">
-          <h2 className="text-green-400 font-bold text-lg mb-4">{t('contentTitle')}</h2>
-          <p className="text-green-400">{t('contentDescription')}</p>
+      <section className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 p-6">
+        <div className="bg-white p-6 rounded-lg shadow-md">
+          <h2 className="text-2xl font-bold mb-4">{t('interviewStudyTitle')}</h2>
+          <p className="text-gray-700 mb-4">{t('interviewStudyDescription')}</p>
+          <Link href="/project/interview-study">
+            <div className="text-blue-500 hover:underline">{t('readMore')}</div>
+          </Link>
         </div>
-        <div className="bg-purple-900 p-6">
-          <h2 className="text-green-400 font-bold text-lg mb-4">{t('methodologyTitle')}</h2>
-          <p className="text-green-400">{t('methodologyDescription')}</p>
-        </div>
-        <div className="bg-purple-900 p-6">
-          <h2 className="text-green-400 font-bold text-lg mb-4">{t('findingsTitle')}</h2>
-          <p className="text-green-400">{t('findingsDescription')}</p>
+        <div className="bg-white p-6 rounded-lg shadow-md">
+          <h2 className="text-2xl font-bold mb-4">{t('surveyStudiesTitle')}</h2>
+          <p className="text-gray-700 mb-4">{t('surveyStudiesDescription')}</p>
+          <Link href="/project/survey-studies">
+            <div className="text-blue-500 hover:underline">{t('readMore')}</div>
+          </Link>
         </div>
       </section>
     </>
@@ -32,7 +36,7 @@ export async function getStaticProps({ locale }) {
     props: {
       ...(await serverSideTranslations(locale, ['project'])),
     },
-    revalidate: 10
+    revalidate: 10,
   };
 }
 

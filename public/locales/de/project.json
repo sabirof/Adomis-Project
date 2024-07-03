@@ -1,10 +1,15 @@
 {
-    "title": "Projekt",
-    "contentTitle": "Inhalt",
-    "contentDescription": "Detaillierte Inhalte hier...",
-    "methodologyTitle": "Methodik",
-    "methodologyDescription": "Detaillierte Methodik hier...",
-    "findingsTitle": "Erwartete Ergebnisse",
-    "findingsDescription": "Details zu den erwarteten Ergebnissen..."
-  }
-  
+  "title": "Projekt",
+  "description": "Willkommen auf unserer Projektseite. Unten finden Sie weitere Informationen zu unseren Studien.",
+  "contentTitle": "Inhalt",
+  "contentDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "methodologyTitle": "Methodik",
+  "methodologyDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "findingsTitle": "Erwartete Ergebnisse",
+  "findingsDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "interviewStudyTitle": "Interview Studie",
+  "interviewStudyDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "surveyStudiesTitle": "Befragung/Umfragestudien",
+  "surveyStudiesDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "readMore": "Mehr erfahren"
+}

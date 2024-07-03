@@ -4,5 +4,6 @@ module.exports = {
     defaultLocale: 'en',
     locales: ['en', 'de'],
   },
-  
+  ns: ['common', 'contact', 'about', 'newsletter', 'privacyPolicy', 'project', 'vision'], // Add all your namespaces here
+  defaultNS: 'common',
 };

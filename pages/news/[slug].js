@@ -1,3 +1,4 @@
+// pages/news/[slug].js
 import PostBody from '@/components/news/PostBody';
 import PostHeader from '@/components/news/PostHeader';
 import PreviewAlert from '@/components/ui/PreviewAlert';
