@@ -12,7 +12,11 @@ const NewsPage = ({ posts }) => {
       <h2 className="text-3xl font-bold text-center mb-8">{t('news.title')}</h2>
       <div className="blog-posts-container">
         {posts.map((post) => (
-          <Link key={post.sys.id} href={`/news/${post.fields.slug}`} passHref>
+          <Link
+            key={post.sys.id}
+            href={`/news/${post.fields.slug}`}
+            passHref
+            legacyBehavior>
             <div className="block overflow-hidden blog-post-preview">
               <Image
                 src={post.fields.coverImage ? `https:${post.fields.coverImage.fields.file.url}` : '/images/default-image.png'}

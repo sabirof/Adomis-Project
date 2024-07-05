@@ -35,7 +35,11 @@ const Carousel = ({ posts }) => {
         onTransitionEnd={() => setIsTransitioning(false)}
       >
         {posts.map((post) => (
-          <Link key={post.sys.id} href={`/posts/${post.fields.slug}`} passHref>
+          <Link
+            key={post.sys.id}
+            href={`/posts/${post.fields.slug}`}
+            passHref
+            legacyBehavior>
             <div className="min-w-full flex-shrink-0 bg-white text-black p-4 rounded-lg shadow-md cursor-pointer transition duration-300 ease-in-out transform hover:-translate-y-1">
               <h4 className="text-lg font-semibold">{post.fields.title}</h4>
               <p>{post.fields.excerpt}</p>

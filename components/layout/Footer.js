@@ -14,24 +14,24 @@ const Footer = () => {
     <footer className="bg-primary p-8 text-white w-full">
       <div className="flex flex-wrap items-start pt-4">
         {/* Logo Section */}
-        <div className="pr-12">
+        <div className="pr-12 mb-8 md:mb-0 md:pr-12 flex justify-center md:block">
           <Image src="/images/logo.png" alt="Logo" width={600} height={600} className="object-contain" />
         </div>
 
         {/* Social Media Links, Contact, and Newsletter Section */}
-        <div className="flex flex-grow items-start justify-between ml-16 space-x-8 pt-24 pl-24">
+        <div className="flex flex-wrap items-start justify-between flex-grow md:ml-16 space-y-8 md:space-y-0 md:space-x-8 pt-12">
           {/* Social Media Links */}
-          <div className="flex flex-col justify-center">
+          <div className="flex flex-col items-center md:items-start">
             <h3 className="text-xl font-bold mb-4">Follow us on</h3>
             <ul className="space-y-2">
-              <li><Link href="https://instagram.com"><div target="_blank" rel="noopener noreferrer">Instagram</div></Link></li>
-              <li><Link href="https://twitter.com"><div target="_blank" rel="noopener noreferrer">Twitter/X</div></Link></li>
-              <li><Link href="https://linkedin.com"><div target="_blank" rel="noopener noreferrer">LinkedIn</div></Link></li>
+              <li><Link href="https://instagram.com">Instagram</Link></li>
+              <li><Link href="https://twitter.com">Twitter/X</Link></li>
+              <li><Link href="https://linkedin.com">LinkedIn</Link></li>
             </ul>
           </div>
 
           {/* Contact Section */}
-          <div className="flex flex-col justify-center">
+          <div className="flex flex-col items-center md:items-start">
             <h3 className="text-xl font-bold mb-4">{t('footer.contactTitle')}</h3>
             <p>Email: info@adomis-project.de</p>
             <p>Phone: 030 209346200</p>
@@ -39,7 +39,7 @@ const Footer = () => {
           </div>
 
           {/* Newsletter Section */}
-          <div className="flex flex-col justify-center max-w-xs">
+          <div className="flex flex-col items-center md:items-start max-w-xs">
             <h3 className="text-lg font-bold mb-4">{t('newsletter.newsletterTitle')}</h3>
             <p className="text-sm">{t('newsletter.newsletterDescription')}</p>
             <form onSubmit={handleSubmit} className="flex flex-col md:flex-row items-start mt-4">
@@ -58,15 +58,15 @@ const Footer = () => {
               </button>
             </form>
             <p className="text-gray-400 text-xs mt-2">
-              {t('newsletter.newsletterPrivacy')} <Link href="/privacy-policy"><div className="text-blue-400 underline">{t('newsletter.newsletterPrivacyLink')}</div></Link>.
+              {t('newsletter.newsletterPrivacy')} <Link href="/privacy-policy" className="text-blue-400 underline">{t('newsletter.newsletterPrivacyLink')}</Link>.
             </p>
           </div>
         </div>
       </div>
       <div className="text-center mt-8">
         <p>© 2024 Sabir Maharramov and Pia Chwalczyk. All rights reserved.  </p>
-        <p>Developer: Sabir Maharramov - <a href="mailto:maharram.sabir@gmail.com" className="text-blue-400 underline">maharram.sabir@gmail.com</a><br />
-           Designer: Pia Chwalczyk - <a href="mailto:piachwalczyk@icloud.com" className="text-blue-400 underline">piachwalczyk@icloud.com</a>
+        <p>Developer: Sabir Maharramov - <Link href="mailto:maharram.sabir@gmail.com" className="text-blue-400 underline">maharram.sabir@gmail.com</Link><br />
+           Designer: Pia Chwalczyk - <Link href="mailto:piachwalczyk@icloud.com" className="text-blue-400 underline">piachwalczyk@icloud.com</Link>
         </p>
         
       </div>

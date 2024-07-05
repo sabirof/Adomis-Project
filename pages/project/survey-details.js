@@ -5,9 +5,10 @@ const SurveyDetailsPage = () => {
   const { t } = useTranslation('project');
 
   return (
-    <div className="container mx-auto py-20">
-      <h2 className="text-3xl text-black font-bold mb-8">{t('surveyDetailsTitle')}</h2>
-      <p>{t('surveyDetailsContent')}</p>
+    <div className="container mx-auto p-8">
+      <h2 className="text-3xl text-black font-bold mb-4">{t('surveyStudiesTitle')}</h2>
+      <p className="text-gray-700 text-lg">{t('surveyStudiesDescription')}</p>
+      {/* Add more detailed text here */}
     </div>
   );
 };

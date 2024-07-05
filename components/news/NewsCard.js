@@ -8,7 +8,7 @@ const NewsCard = ({ post }) => {
 
   return (
     <li className='rounded-md overflow-hidden shadow-md'>
-      <Link href={`/posts/${slug}`} aria-label={title}>
+      <Link href={`/posts/${slug}`} aria-label={title} legacyBehavior>
         <div className='mb-2'>
           <ContentfulImage
             alt={`Cover Image for ${title}`}
@@ -27,7 +27,7 @@ const NewsCard = ({ post }) => {
         </div>
       </Link>
     </li>
-  )
+  );
 }
 
 export default NewsCard

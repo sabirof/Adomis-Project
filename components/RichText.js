@@ -35,10 +35,10 @@ const options = {
     [INLINES.ENTRY_HYPERLINK]: node => {
       if (node.data.target.sys.contentType.sys.id === 'post') {
         return (
-          <Link href={`/posts/${node.data.target.fields.slug}`}>
+          <Link href={`/posts/${node.data.target.fields.slug}`} legacyBehavior>
             {node.data.target.fields.title}
           </Link>
-        )
+        );
       }
     },
 
