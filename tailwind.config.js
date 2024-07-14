@@ -5,7 +5,13 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  theme: {
+  theme: { screens: {
+    sm: '375px',
+    md: '768px',
+    lg: '1100px',
+    xl: '1280px',
+    '2xl': '1536px',
+  },
     extend: {
       colors: {
         primary: '#8545A8',   // Primärfarbe

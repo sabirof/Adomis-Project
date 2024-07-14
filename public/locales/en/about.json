@@ -2,17 +2,16 @@
     "teamTitle": "ADOMiS Team",
     "teamMembers": {
       "profMirjam": "Prof. Dr. Mirjam Fischer",
-      "profMirjamRole": "Professor",
+      "profMirjamRole": "Project Lead",
       "drEsto": "Dr. Esto Mader",
-      "drEstoRole": "Researcher",
+      "drEstoRole": "Postdoctoral fellow",
       "lea": "Lea Luttenberger",
-      "leaRole": "Research Assistant",
+      "leaRole": "Doctoral Fellow",
       "selin": "Selin Akgöz",
       "selinRole": "Research Assistant",
       "celine": "Celine Vallender",
-      "celineRole": "Research Assistant",
-      "tbd": "tbd",
-      "tbdRole": "To be decided"
+      "celineRole": "Research Assistant"
+      
     }
   }
   

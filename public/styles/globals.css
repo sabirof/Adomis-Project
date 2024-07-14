@@ -1,36 +1,48 @@
+/* Base styles */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-  #__next {
-    @apply contents;
-  }
+  #__next { @apply contents; }
+  html { @apply h-full scroll-smooth antialiased; }
+  body { @apply flex h-full flex-col text-stone-600; }
+  main { @apply grow; }
+  .section { @apply py-24; }
+  .container { @apply max-w-5xl mx-auto px-4 sm:px-6 lg:px-8; }
+  .title { @apply font-bold tracking-tight; }
+}
 
-  html {
-    @apply h-full scroll-smooth antialiased;
-  }
+/* Combined logo and text box styles */
+.logo-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  img { width: 100%; height: auto; }
+  .text-box { width: 100%; text-align: center; }
+}
 
-  body {
-    @apply flex h-full flex-col text-stone-600;
-  }
-
-  main {
-    @apply grow;
-  }
-
-  .section {
-    @apply py-24;
-  }
-
-  .container {
-    @apply max-w-5xl mx-auto px-4 sm:px-6 lg:px-8;
-  }
-
-  .title {
-    @apply font-bold tracking-tight;
+@media (min-width: 768px) {
+  .logo-text-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    img { width: 300px; }
+    .text-box { max-width: 700px; }
   }
 }
+
+@media (min-width: 1024px) {
+  .logo-text-container img { width: 400px; }
+  .logo-text-container .text-box {
+    font-size: 3rem;
+    p { font-size: 1.5rem; }
+  }
+}
+
+/* Blog post preview styles */
 .blog-post-preview {
   position: relative;
   overflow: hidden;
@@ -38,74 +50,123 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
   cursor: pointer;
-}
-
-.blog-post-preview:hover {
-  transform: translateY(-4px);
-}
-
-.blog-post-preview img {
-  width: 100%;
-  height: 200px; /* Set a fixed height for images */
-  object-fit: cover;
-}
-
-.blog-post-preview-content {
-  padding: 16px;
-}
-
-.blog-post-title {
-  font-size: 1.25rem;
-  font-weight: bold;
-  margin-bottom: 8px;
-}
-
-.blog-post-excerpt {
-  font-size: 1rem;
-  color: #4A4A4A;
+  display: flex;
+  flex-direction: column;
+  &:hover { transform: translateY(-4px); }
+  img { width: 100%; height: auto; object-fit: cover; }
+  .content {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  .title { font-size: 1.25rem; font-weight: bold; margin-bottom: 8px; }
+  .excerpt { font-size: 1rem; color: #4A4A4A; }
 }
 
 .blog-posts-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust the min-width as needed */
-  gap: 20px; /* Adjust the gap as needed */
-}
-.blog-post-preview {
-  position: relative;
-  overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
-  cursor: pointer;
-}
-
-.blog-post-preview:hover {
-  transform: translateY(-4px);
-}
-
-.blog-post-preview img {
-  width: 100%;
-  height: 200px; /* Set a fixed height for images */
-  object-fit: cover;
-}
-
-.blog-post-preview-content {
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   padding: 16px;
 }
-
-.blog-post-title {
-  font-size: 1.25rem;
-  font-weight: bold;
-  margin-bottom: 8px;
+@media (max-width: 768px) {
+  .blog-posts-container {
+    grid-template-columns: 1fr; /* Makes sure only one column is used on very small screens */
+  }
+  .blog-post-preview img {
+    width: 100%; /* Ensures image is not wider than the screen */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: cover; /* Ensures image covers the designated area */
+  }
 }
 
-.blog-post-excerpt {
-  font-size: 1rem;
-  color: #4A4A4A;
+/* Responsive adjustments for navbar */
+.header {
+  @media (max-width: 1023px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    nav, .logo { width: 100%; text-align: left; }
+    .logo img { margin-left: 0; }
+    nav ul { flex-direction: column; gap: 16px; align-items: flex-start; }
+  }
 }
 
-.blog-posts-container {
+@media (min-width: 768px) and (max-width: 1120px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-items, .logo { width: 100%; text-align: left; display: block; }
+  .hamburger { display: block; position: absolute; left: 20px; top: 10px; transform: none; }
+}
+
+@media (min-width: 1121px) {
+  .nav-items { display: block; }
+  .hamburger { display: none; }
+}
+
+.hamburger {
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 1121px) {
+  .hamburger {
+    display: none; /* Show the menu */
+   
+  }
+
+  nav {
+    text-align: center; /* Center the navigation text */
+  }
+}
+/* Main footer styles */
+.footer {
+  background: var(--primary-color);
+  padding: 16px 0;
+  color: white;
+  display: flex;
+  justify-content: center; /* Center footer content */
+}
+
+/* Grid setup for footer */
+.footer .container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust the min-width as needed */
-  gap: 20px; /* Adjust the gap as needed */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+  align-items: start;
+  justify-content: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .footer .container {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .footer .container {
+    grid-template-columns: 1fr; /* Stacks elements vertically on smaller screens */
+  }
+
+  .footer div {
+    text-align: center; /* Centers the content within the footer on smaller screens */
+  }
+}
+
+/* Adjusting newsletter section specifically */
+.newsletter-section {
+  width: 50%; /* Adjust width */
+  flex-basis: 16.67%; /* Match width for flex sizing */
+  margin: 0 auto; /* Center the newsletter section */
+}
+
+@media (max-width: 1024px) {
+  .newsletter-section {
+    max-width: 50%; /* Full width on smaller screens */
+    flex-basis: 100%; /* Full width for flex sizing */
+  }
 }

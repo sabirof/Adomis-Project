@@ -8,7 +8,10 @@
     "about": "Über uns",
     "contact": "Kontakt",
     "privacyPolicy": "Datenschutz",
-    "vision": "Vision"
+    "vision": "Vision",
+    "interviewStudies": "Interview-Studien",
+    "surveyStudies": "Umfrage-Studien"
+    
   },
   "footer": {
     "description": "Footer-Inhalt kommt hier hin",

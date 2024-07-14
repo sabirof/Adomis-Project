@@ -7,7 +7,9 @@
     "about": "About Us",
     "contact": "Contact",
     "privacyPolicy": "Privacy Policy",
-    "vision": "Vision"
+    "vision": "Vision",
+    "interviewStudies": "Interview Studies",
+    "surveyStudies": "Survey Studies"
   },
   "footer": {
     "description": "Footer content goes here",
