@@ -170,3 +170,21 @@
     flex-basis: 100%; /* Full width for flex sizing */
   }
 }
+
+
+@media (min-width: 768px) and (max-width: 1120px) {
+  .footer h3, .footer p {
+    font-size: 16px; /* Fixed font size */
+    line-height: 1.4; /* Consistent line spacing */
+    text-align: center; /* Ensures text is centered */
+    margin: 10px 0; /* Adds vertical spacing */
+    padding: 0 20px; /* Padding to prevent text from touching the container edges */
+  }
+}
+
+/* Further stabilization for text */
+.footer .contact-section, .footer .newsletter-section, .footer .social-section {
+  padding: 20px; /* Consistent padding */
+  margin: 10px; /* Consistent outer spacing */
+  border: 1px solid #ccc; /* Optional: adds a border for visual separation */
+}

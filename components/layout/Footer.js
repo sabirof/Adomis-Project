@@ -21,7 +21,7 @@ const Footer = () => {
         {/* Social Media Links, Contact, and Newsletter Section */}
         <div className="w-full md:w-2/3 flex flex-col md:flex-row justify-center md:space-x-8">
           {/* Social Media Links */}
-          <div className="flex flex-col items-center md:w-1/3 mb-8 md:mb-0 bg-primary p-4 rounded-lg">
+          <div className="flex flex-col items-center md:w-1/3 mb-8 md:mb-0 bg-primary p-4 rounded-lg social-section">
             <h3 className="text-xl font-bold mb-4">Follow us on</h3>
             <ul className="space-y-2">
               <li><Link href="https://instagram.com">Instagram</Link></li>
@@ -31,7 +31,7 @@ const Footer = () => {
           </div>
 
           {/* Contact Section */}
-          <div className="flex flex-col items-center md:w-1/3 mb-8 md:mb-0 bg-primary p-4 rounded-lg">
+          <div className="flex flex-col items-center md:w-1/3 mb-8 md:mb-0 bg-primary p-4 rounded-lg contact-section">
             <h3 className="text-xl font-bold mb-4">{t('footer.contactTitle')}</h3>
             <p className="text-center">Email: info@adomis-project.de</p>
             <p className="text-center">Phone: 030 209346200</p>
