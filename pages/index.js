@@ -23,7 +23,7 @@ const HomePage = ({ initialPosts }) => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac leo nunc. Vestibulum et mauris vel ante finibus maximus nec ut leo. Integer consectetur lorem nunc, a condimentum massa posuere et. Proin ut dolor sed felis commodo bibendum. Ut faucibus dui quis lorem fermentum, a volutpat elit convallis. Proin at pharetra tortor. In convallis tortor non purus tristique tincidunt. Curabitur venenatis felis eu magna semper, eu varius felis vestibulum. Phasellus in est lacus. Sed mollis velit velit, et dapibus risus tristique at. Nulla at dolor finibus, dictum magna ut, elementum eros. Morbi vulputate nec tortor in malesuada. Vivamus ultrices in mi in posuere. In tempor velit non tortor suscipit, in elementum arcu fringilla. Donec pulvinar ligula eros, ac scelerisque nisi elementum a.
               </p>
               <Link href="/about" passHref>
-                <button className="bg-green-400 text-white px-6 py-3 rounded-lg transition duration-200 hover:bg-green-700 focus:outline-none">About Us</button>
+                <button className="bg-secondary text-white px-6 py-3 rounded-lg transition duration-200 hover:bg-green-700 focus:outline-none">About Us</button>
               </Link>
             </div>
           </div>
@@ -31,9 +31,9 @@ const HomePage = ({ initialPosts }) => {
           {/* Blog Posts Section */}
           <div className="text-left p-8 bg-gray-50 shadow-md rounded-md">
   <div className="flex items-center mb-4">
-    <h3 className="text-xl font-bold text-green-400 mr-2">{t('Latest Blog Posts')}</h3>
+    <h3 className="text-xl font-bold text-primary mr-2">{t('Latest Blog Posts')}</h3>
     <Link href="/news" passHref>
-      <svg className="w-6 h-6 text-green-400 cursor-pointer hover:text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <svg className="w-6 h-6 text-primary cursor-pointer hover:text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
       </svg>
     </Link>

@@ -35,38 +35,39 @@ const AboutPage = () => {
   ];
 
   return (
-    <div className="py-20">
-      <div className="container mx-auto px-4">
-        <h2 className="text-5xl text-center font-bold mb-12">{t('teamTitle')}</h2>
-        <div className="text-center text-lg mb-12 max-w-3xl mx-auto">
+    <div className="about-container py-20">
+  <div className="about-content container mx-auto px-4">
+    <h2 className="about-title text-5xl text-center font-bold mb-12">{t('teamTitle')}</h2>
+    <div className="about-description text-center text-lg mb-12 max-w-3xl mx-auto">
           <p>{t('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed euismod nisi porta lorem mollis aliquam. Maecenas pharetra convallis posuere morbi. Ornare suspendisse sed nisi lacus sed viverra tellus in. Hac habitasse platea dictumst quisque sagittis purus sit amet volutpat. Dui vivamus arcu felis bibendum ut tristique et. Augue neque gravida in fermentum et sollicitudin ac orci phasellus. Malesuada nunc vel risus commodo viverra maecenas. Egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Pharetra magna ac placerat vestibulum.')}</p>
-        </div>
-        <div className="flex justify-center mb-12">
-          <Image
-            src="/images/team.jpg"
-            alt="Group Photo"
-            width={800}
-            height={600}
-            className="object-contain"
-          />
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 justify-items-center px-4">
-          {teamMembers.map((member, index) => (
-            <div
-              className="text-center bg-green-300 rounded-lg p-6 border border-white w-full text-black"
-              key={index}
-            >
-              <Link href={member.link}>
-                <div className="block">
-                  <h3 className="text-xl font-semibold">{member.name}</h3>
-                  <p className="text-gray-500">{member.role}</p>
-                </div>
-              </Link>
-            </div>
-          ))}
-        </div>
-      </div>
+          </div>
+    <div className="about-team-image flex justify-center mb-12">
+      <Image
+        src="/images/team.jpg"
+        alt="Group Photo"
+        width={600}
+        height={600}
+        objectFit="contain"
+       
+      />
     </div>
+    <div className="team-grid grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5 gap-4 justify-items-center px-4">
+    {teamMembers.map((member, index) => (
+        <div
+          className="team-grid-container text-center bg-accent rounded-lg p-6 border border-white w-full text-black"
+          key={index}
+        >
+          <Link href={member.link}>
+            <div className="team-member-card block">
+              <h3 className="team-member-name text-xl font-semibold">{member.name}</h3>
+              <p className="team member role text-gray-500">{member.role}</p>
+            </div>
+          </Link>
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
   );
 };
 

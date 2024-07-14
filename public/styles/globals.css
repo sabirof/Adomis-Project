@@ -160,8 +160,9 @@
 /* Adjusting newsletter section specifically */
 .newsletter-section {
   width: 50%; /* Adjust width */
-  flex-basis: 16.67%; /* Match width for flex sizing */
+  flex-basis: 40%; /* Match width for flex sizing */
   margin: 0 auto; /* Center the newsletter section */
+  padding-right: 40px;
 }
 
 @media (max-width: 1024px) {
@@ -172,19 +173,73 @@
 }
 
 
-@media (min-width: 768px) and (max-width: 1120px) {
-  .footer h3, .footer p {
-    font-size: 16px; /* Fixed font size */
-    line-height: 1.4; /* Consistent line spacing */
+/* Ensure the footer elements are aligned in one row between 768px and 1120px */
+@media (min-width: 768px) and (max-width: 1280px) {
+  .footer-container {
+    display: flex;
+    flex-direction: row; /* Changes from column to row for horizontal alignment */
+    justify-content: space-around; /* Distributes space evenly around each section */
+    align-items: center; /* Vertically centers content within each section */
+  }
+
+  .footer-container div {
+    flex: 1; /* Each child div takes equal width */
     text-align: center; /* Ensures text is centered */
-    margin: 10px 0; /* Adds vertical spacing */
-    padding: 0 20px; /* Padding to prevent text from touching the container edges */
+    padding: 10px; /* Adds padding for spacing */
+  }
+
+  .footer-container h3, .footer-container p {
+    margin: 5px 0; /* Adjusts spacing around text */
+    line-height: 1.5; /* Ensures consistent line height */
+  }
+
+  .newsletter-section {
+    padding: 20px; /* Adds noticeable padding around the newsletter for emphasis */
   }
 }
 
-/* Further stabilization for text */
-.footer .contact-section, .footer .newsletter-section, .footer .social-section {
-  padding: 20px; /* Consistent padding */
-  margin: 10px; /* Consistent outer spacing */
-  border: 1px solid #ccc; /* Optional: adds a border for visual separation */
+.team-grid-container {
+ 
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.team-member-name, .team-member-role {
+  margin: 0.5rem 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: clamp(0.75rem, 2.5vw, 1rem); /* Adjusted for better scaling between breakpoints */
+}
+
+/* Media Queries to adjust grid and text sizes dynamically */
+@media (max-width: 768px) {
+  .grid-cols-1 {
+    grid-template-columns: 1fr; /* Stacks cards vertically on smaller screens */
+  }
+  .team-member-name, .team-member-role {
+    font-size: clamp(0.75rem, 4vw, 0.9rem); /* Smaller font sizes for narrower viewports */
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1100px) {
+  .grid-cols-1 {
+    grid-template-columns: repeat(3, 1fr) /* Responsive grid for intermediate screens */
+  }
+  .team-member-name, .team-member-role {
+    font-size: clamp(0.8rem, 2.5vw, 1rem); /* Slightly larger fonts for readability */
+  }
+}
+
+@media (min-width: 1101px) {
+  .grid-cols-1 {
+    grid-template-columns: repeat(5, 1fr); /* Full-width grids for larger screens */
+  }
 }

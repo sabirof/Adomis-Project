@@ -58,44 +58,44 @@ useEffect(() => {
         <div className="container mx-auto flex flex-col md:flex-row md:justify-start items-center gap-4 pt-4 md:pt-20">
           <ul className="text-black flex flex-col md:flex-row gap-6 text-lg">
             <li>
-              <Link href="/" className="hover:bg-purple-200 p-2 rounded-md transition">
+              <Link href="/" className="hover:bg-accent p-2 rounded-md transition">
                 {t('navbar.home')}
               </Link>
             </li>
             <li>
-              <Link href="/vision" className="hover:bg-purple-200 p-2 rounded-md transition">
+              <Link href="/vision" className="hover:bg-accent p-2 rounded-md transition">
                 {t('navbar.vision')}
               </Link>
             </li>
             <li className="relative group">
-              <Link href="/project" className="hover:bg-purple-200 p-2 rounded-md transition">
+              <Link href="/project" className="hover:bg-accent p-2 rounded-md transition">
                 {t('navbar.project')}
               </Link>
               <ul className="absolute left-0 mt-2 w-40 bg-white border border-gray-200 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <li>
-                  <Link href="/project/interview-details" className="block px-3 py-1 hover:bg-purple-200 rounded-t-md">
+                  <Link href="/project/interview-details" className="block px-3 py-1 hover:bg-accent rounded-t-md">
                     {t('navbar.interviewStudies')}
                   </Link>
                 </li>
                 <li>
-                  <Link href="/project/survey-details" className="block px-3 py-1 hover:bg-purple-200 rounded-b-md">
+                  <Link href="/project/survey-details" className="block px-3 py-1 hover:bg-accent rounded-b-md">
                     {t('navbar.surveyStudies')}
                   </Link>
                 </li>
               </ul>
             </li>
             <li>
-              <Link href="/news" className="hover:bg-purple-200 p-2 rounded-md transition">
+              <Link href="/news" className="hover:bg-accent p-2 rounded-md transition">
                 {t('navbar.news')}
               </Link>
             </li>
             <li>
-              <Link href="/about" className="hover:bg-purple-200 p-2 rounded-md transition">
+              <Link href="/about" className="hover:bg-accent p-2 rounded-md transition">
                 {t('navbar.about')}
               </Link>
             </li>
             <li>
-              <Link href="/contact" className="hover:bg-purple-200 p-2 rounded-md transition">
+              <Link href="/contact" className="hover:bg-accent p-2 rounded-md transition">
                 {t('navbar.contact')}
               </Link>
             </li>

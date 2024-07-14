@@ -12,16 +12,16 @@ const Footer = () => {
 
   return (
     <footer className="bg-primary p-8 text-white w-full">
-      <div className="flex flex-wrap items-start pt-4 justify-center">
+      <div className="footer-container flex flex-wrap items-start pt-4 justify-center">
         {/* Logo Section */}
-        <div className="w-full md:w-1/3 mb-8 md:mb-0 flex justify-center">
+        <div className="w-full md:w-2/3 mb-8 md:mb-0 flex justify-center">
           <Image src="/images/logo.png" alt="Logo" width={600} height={600} className="object-contain" />
         </div>
 
         {/* Social Media Links, Contact, and Newsletter Section */}
-        <div className="w-full md:w-2/3 flex flex-col md:flex-row justify-center md:space-x-8">
+        <div className="w-full md:w-full flex flex-col md:flex-row justify-between md:space-x-10">
           {/* Social Media Links */}
-          <div className="flex flex-col items-center md:w-1/3 mb-8 md:mb-0 bg-primary p-4 rounded-lg social-section">
+          <div className="flex flex-col items-center md:w-1/3 mb-8 md:mb-0  p-4 rounded-lg social-links">
             <h3 className="text-xl font-bold mb-4">Follow us on</h3>
             <ul className="space-y-2">
               <li><Link href="https://instagram.com">Instagram</Link></li>
@@ -31,7 +31,7 @@ const Footer = () => {
           </div>
 
           {/* Contact Section */}
-          <div className="flex flex-col items-center md:w-1/3 mb-8 md:mb-0 bg-primary p-4 rounded-lg contact-section">
+          <div className="flex flex-col items-center md:w-2/3 mb-8 md:mb-0 p-4 rounded-lg contact-section">
             <h3 className="text-xl font-bold mb-4">{t('footer.contactTitle')}</h3>
             <p className="text-center">Email: info@adomis-project.de</p>
             <p className="text-center">Phone: 030 209346200</p>
@@ -39,9 +39,9 @@ const Footer = () => {
           </div>
 
            {/* Newsletter Section */}
-           <div className=" bg-primary p-4 rounded-lg newsletter-section">
+           <div className="flex flex-col items-center md:w-1/3 mb-8 md:mb-0 p-4 rounded-lg newsletter-section">
             <h3 className="text-lg font-bold mb-4 text-center">{t('newsletter.newsletterTitle')}</h3>
-            <p className="text-sm text-left">{t('newsletter.newsletterDescription')}</p>
+            <p className="text-sm text-center">{t('newsletter.newsletterDescription')}</p>
             <form onSubmit={handleSubmit} className="flex flex-col items-center mt-4 w-full">
               <input
                 type="email"
@@ -52,7 +52,7 @@ const Footer = () => {
               />
               <button
                 type="submit"
-                className="bg-green-400 text-white px-4 py-1 rounded-lg transition duration-200 hover:bg-green-600 focus:outline-none text-sm"
+                className="bg-secondary text-white px-4 py-1 rounded-lg transition duration-200 hover:bg-green-600 focus:outline-none text-sm"
               >
                 {t('newsletter.newsletterSubscribe')}
               </button>

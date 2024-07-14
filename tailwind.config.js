@@ -14,9 +14,9 @@ module.exports = {
   },
     extend: {
       colors: {
-        primary: '#8545A8',   // Primärfarbe
-        secondary: '#AA4A82', // Sekundärfarbe
-        accent: '#6E5971',    // Akzentfarbe
+        primary: '#200D41',   // Primärfarbe
+        secondary: '#80E7A6', // Sekundärfarbe
+        accent: '#B6F1CC',    // Akzentfarbe
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
