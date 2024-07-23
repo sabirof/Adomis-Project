@@ -90,8 +90,22 @@
     justify-content: center;
     nav, .logo { width: 100%; text-align: left; }
     .logo img { margin-left: 0; }
-    nav ul { flex-direction: column; gap: 16px; align-items: flex-start; }
+    nav ul { flex-direction: column; gap: 16px; align-items: center; }
   }
+}
+
+@media (min-width: 1024px) {
+  .header {
+    flex-direction: row;
+    align-items: center;
+  }
+  .nav-items, .logo { width: auto; text-align: left; display: block; }
+  .hamburger { display: none; }
+}
+
+.hamburger {
+  display: flex;
+  justify-content: center;
 }
 
 @media (min-width: 768px) and (max-width: 1120px) {
@@ -112,16 +126,17 @@
   display: flex;
   justify-content: center;
 }
+
 @media (min-width: 1121px) {
   .hamburger {
     display: none; /* Show the menu */
-   
   }
 
   nav {
     text-align: center; /* Center the navigation text */
   }
 }
+
 /* Main footer styles */
 .footer {
   background: var(--primary-color);
@@ -236,10 +251,16 @@
   .team-member-name, .team-member-role {
     font-size: clamp(0.8rem, 2.5vw, 1rem); /* Slightly larger fonts for readability */
   }
+  .nav ul {
+    flex-direction: column; /* Aligns the nav items vertically */
+    gap: 16px; /* Adds spacing between items */
+    align-items: flex-start; /* Aligns items to the start of the flex container */
+  }
 }
 
 @media (min-width: 1101px) {
   .grid-cols-1 {
     grid-template-columns: repeat(5, 1fr); /* Full-width grids for larger screens */
   }
+  
 }

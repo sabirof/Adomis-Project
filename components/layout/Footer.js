@@ -5,10 +5,7 @@ import Image from 'next/image';
 const Footer = () => {
   const { t } = useTranslation('common');
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-    // Add your email submission logic here
-  };
+  
 
   return (
     <footer className="bg-primary p-8 text-white w-full">
@@ -41,25 +38,11 @@ const Footer = () => {
            {/* Newsletter Section */}
            <div className="flex flex-col items-center md:w-1/3 mb-8 md:mb-0 p-4 rounded-lg newsletter-section">
             <h3 className="text-lg font-bold mb-4 text-center">{t('newsletter.newsletterTitle')}</h3>
-            <p className="text-sm text-center">{t('newsletter.newsletterDescription')}</p>
-            <form onSubmit={handleSubmit} className="flex flex-col items-center mt-4 w-full">
-              <input
-                type="email"
-                name="email"
-                placeholder={t('newsletter.newsletterPlaceholder')}
-                className="px-2 py-1 w-3/4 md:w-auto rounded-lg focus:outline-none mb-2 text-sm"
-                required
-              />
-              <button
-                type="submit"
-                className="bg-secondary text-white px-4 py-1 rounded-lg transition duration-200 hover:bg-green-600 focus:outline-none text-sm"
-              >
+            <Link href="/newsletter">
+              <div className="bg-secondary text-white px-4 py-1 rounded-lg transition duration-200 hover:bg-green-600 focus:outline-none text-sm">
                 {t('newsletter.newsletterSubscribe')}
-              </button>
-            </form>
-            <p className="text-gray-400 text-xs mt-2 text-center">
-              {t('newsletter.newsletterPrivacy')} <Link href="/privacy-policy" className="text-blue-400 underline">{t('newsletter.newsletterPrivacyLink')}</Link>.
-            </p>
+              </div>
+            </Link>
           </div>
         </div>
       </div>
