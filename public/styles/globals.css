@@ -264,3 +264,12 @@
   }
   
 }
+/* Tailwind CSS will handle most of the work, but additional CSS can be added if necessary */
+@media (min-width: 1024px) and (max-width: 1120px) {
+  .submenu {
+    left: auto !important;
+    right: full !important;
+    margin-top: 10px !important;
+    margin-left: 2px !important;
+  }
+}
