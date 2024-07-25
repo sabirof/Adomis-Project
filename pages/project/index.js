@@ -7,7 +7,7 @@ const ProjectPage = () => {
 
   return (
     <>
-      <div className="text-center py-8">
+      <div className="text-center py-40">
         <h2 className="text-3xl text-black font-bold">{t('title')}</h2>
         <p className="text-lg text-gray-700 mt-4">{t('description')}</p>
       </div>

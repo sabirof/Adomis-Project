@@ -46,15 +46,16 @@ const AboutPage = () => {
         src="/images/team.jpg"
         alt="Group Photo"
         width={600}
-        height={600}
+        height={500}
         objectFit="contain"
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
        
       />
     </div>
     <div className="team-grid grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5 gap-4 justify-items-center px-4">
     {teamMembers.map((member, index) => (
         <div
-          className="team-grid-container text-center bg-accent rounded-lg p-6 border border-white w-full text-black"
+          className="team-grid-container text-center bg-accent hover:bg-green-400 rounded-lg p-6 border border-white w-full text-black"
           key={index}
         >
           <Link href={member.link}>

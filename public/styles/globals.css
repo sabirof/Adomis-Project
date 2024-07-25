@@ -12,6 +12,11 @@
   .container { @apply max-w-5xl mx-auto px-4 sm:px-6 lg:px-8; }
   .title { @apply font-bold tracking-tight; }
 }
+/* styles/globals.css */
+body {
+  background-color: #e8e5f7;
+}
+
 
 /* Combined logo and text box styles */
 .logo-text-container {

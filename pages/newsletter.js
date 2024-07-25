@@ -48,7 +48,7 @@ const Newsletter = () => {
               required
               className="p-2 mb-4 w-full max-w-xs rounded text-black"
             />
-            <button type="submit" className="p-2 bg-secondary text-white rounded shadow w-full max-w-xs">
+            <button type="submit" className="p-2 bg-secondary hover:bg-green-400 text-gray-600 hover:text-gray-800  rounded shadow w-full max-w-xs">
               {t('subscribeButton')}
             </button>
           </form>

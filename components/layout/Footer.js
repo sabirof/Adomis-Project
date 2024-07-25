@@ -10,11 +10,11 @@ const Footer = () => {
       <div className="footer-container flex flex-wrap items-left pt-4 justify-center custom:flex-col customLg:flex-row">
         {/* Logo Section */}
         <div className="w-full md:w-2/3 mb-8 md:mb-20 flex justify-center">
-          <Image src="/images/logo.png" alt="Logo" width={600} height={600} className="object-contain" />
+          <Image src="/images/logo.png" alt="Logo" width={500} height={500} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-contain" />
         </div>
 
         {/* Social Media Links, Contact, and Newsletter Section */}
-        <div className="w-full md:w-full flex flex-col md:flex-row justify-between md:space-x-10">
+        <div className="w-full md:w-full flex flex-col md:flex-row justify-between ">
           {/* Social Media Links */}
           <div className="flex flex-col items-center md:w-1/3 mb-8 md:mb-0 p-4 rounded-lg social-links">
             <h3 className="text-3xl md:text-2xl font-bold mb-4">Follow us on</h3>
@@ -35,7 +35,7 @@ const Footer = () => {
           <div className="flex flex-col items-center md:w-1/3 mb-8 md:mb-0 p-4 rounded-lg newsletter-section">
             <h3 className="text-3xl md:text-2xl font-bold mb-4 text-center">{t('newsletter.newsletterTitle')}</h3>
             <Link href="/newsletter">
-              <div className="flex items-center justify-between bg-secondary text-primary px-10 py-5 rounded-lg transition duration-200 hover:bg-green-600 focus:outline-none text-2xl">
+              <div className="flex items-center justify-between bg-secondary text-primary px-10 py-5 rounded-lg transition duration-200 hover:bg-green-400 focus:outline-none text-2xl">
                 <span>{t('newsletter.newsletterSubscribe')}</span>
                 <svg className="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                   <path fillRule="evenodd" d="M12.293 9.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 15H4a1 1 0 110-2h10.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />

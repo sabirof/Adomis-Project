@@ -28,7 +28,7 @@ const Navbar = () => {
         {/* Logo Section */}
         <div className={`md:pt-40 lg:pt-20 ${menuOpen && isMobile ? 'pt-20' : ''} md:absolute md:right-0 md:top-1/2 md:transform md:-translate-y-1/2 flex justify-center`}>
           <Link href="/">
-            <Image src="/images/logo2.png" alt="Logo" width={menuOpen && isMobile ? 500 : 300} height={menuOpen && isMobile ? 500 : 300} priority />
+            <Image src="/images/logo2.png" alt="Logo" width={menuOpen && isMobile ? 400 : 300} height={menuOpen && isMobile ? 400 : 250} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" priority />
           </Link>
         </div>
 
