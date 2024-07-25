@@ -3,69 +3,78 @@
 import Head from 'next/head';
 import { useState } from 'react';
 import Link from 'next/link';
+import { useTranslation } from 'next-i18next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 const Newsletter = () => {
+  const { t } = useTranslation('newsletter');
   const [email, setEmail] = useState('');
   const [status, setStatus] = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus('');
-    try {
-      const res = await fetch('/api/subscribe', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ email }),
-      });
 
-      const result = await res.json();
-      if (res.ok) {
-        setStatus('Thank you for subscribing!');
-        setEmail('');
-      } else {
-        console.error('Error response from server:', result);
-        setStatus(`Failed to subscribe. ${result.error}`);
-      }
+    try {
+      const mailtoLink = `mailto:info@adomis-project.de?subject=Newsletter Subscription Request&body=${t('newsletterBody')}${email}%0D%0A%0D%0A${t('newsletterThanks')}`;
+
+      window.location.href = mailtoLink;
+      setStatus(t('statusSuccess'));
     } catch (error) {
       console.error('Error subscribing:', error);
-      setStatus('Failed to subscribe. Please try again.');
+      setStatus(t('statusError'));
     }
   };
 
   return (
     <div>
       <Head>
-        <title>Subscribe to Our Newsletter</title>
-        <meta name="description" content="Subscribe to our newsletter" />
+        <title>{t('title')}</title>
+        <meta name="description" content={t('description')} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main style={{ padding: '2rem', maxWidth: '800px', margin: '0 auto' }}>
-        <h1>Subscribe to Our Newsletter</h1>
-        <p>Stay updated with the latest news and updates from our research projects.</p>
-        <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-          <input
-            type="email"
-            name="email"
-            placeholder="Enter your email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-            style={{ padding: '0.5rem', marginBottom: '1rem', width: '100%', maxWidth: '400px' }}
-          />
-          <button type="submit" style={{ padding: '0.5rem 1rem', backgroundColor: '#0070f3', color: '#fff', border: 'none', borderRadius: '4px' }}>
-            Subscribe
-          </button>
-        </form>
-        {status && <p style={{ marginTop: '1rem', color: status.startsWith('Thank') ? 'green' : 'red' }}>{status}</p>}
-        <p style={{ marginTop: '1rem' }}>
-          Read our <Link href="/privacy-policy"><div style={{ color: '#0070f3' }}>privacy policy</div></Link> to learn more about how we use your information.
-        </p>
+      <main className="flex items-center justify-center py-20 ">
+        <div className="bg-primary text-white p-20 rounded shadow-lg w-full max-w-lg">
+          <h1 className="text-3xl font-bold mb-4 text-center">{t('title')}</h1>
+          <p className="mb-8 text-center">{t('description')}</p>
+          <form onSubmit={handleSubmit} className="flex flex-col items-center">
+            <input
+              type="email"
+              name="email"
+              placeholder={t('emailPlaceholder')}
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+              className="p-2 mb-4 w-full max-w-xs rounded text-black"
+            />
+            <button type="submit" className="p-2 bg-secondary text-white rounded shadow w-full max-w-xs">
+              {t('subscribeButton')}
+            </button>
+          </form>
+          {status && (
+            <p className={`mt-4 text-center ${status.startsWith(t('statusSuccess').split(' ')[0]) ? 'text-green-500' : 'text-red-500'}`}>
+              {status}
+            </p>
+          )}
+          <p className="mt-4 text-center">
+            {t('privacyPolicy')}{' '}
+            <Link href="/privacy-policy">
+              <div className="text-secondary hover:underline">{t('privacyPolicyLink')}</div>
+            </Link>
+          </p>
+        </div>
       </main>
     </div>
   );
 };
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['newsletter', 'common'])),
+    },
+  };
+}
 
 export default Newsletter;

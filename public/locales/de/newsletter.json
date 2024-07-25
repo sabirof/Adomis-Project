@@ -1,9 +1,12 @@
 {
-    "newsletterTitle": "Melden Sie sich für unseren Newsletter an",
-    "newsletterDescription": "Bleiben Sie über den Projektfortschritt, Ankündigungen und exklusive Inhalte auf dem Laufenden. Melden Sie sich gerne mit Ihrer E-Mail an.",
-    "newsletterPlaceholder": "Geben Sie Ihre E-Mail ein",
-    "newsletterSubscribe": "Abonnieren",
-    "newsletterPrivacy": "Wir kümmern uns um den Schutz Ihrer Daten. Lesen Sie unsere",
-    "newsletterPrivacyLink": "Datenschutzbestimmungen"
-  }
-  
+  "title": "Abonnieren Sie unseren Newsletter!",
+  "description": "Bleiben Sie mit den neuesten Nachrichten und Updates zu unseren Forschungsprojekten auf dem Laufenden.",
+  "emailPlaceholder": "Geben Sie Ihre E-Mail ein",
+  "subscribeButton": "Abonnieren",
+  "statusSuccess": "Die Anforderung zum Abonnieren wurde in Ihrem E-Mail-Client geöffnet.",
+  "statusError": "Fehler beim Abonnieren. Bitte versuchen Sie es erneut.",
+  "privacyPolicy": "Lesen Sie unsere",
+  "privacyPolicyLink": "Datenschutzrichtlinie",
+  "newsletterBody": "Liebes Adomis-Team,%0D%0A%0D%0AIch möchte über alle Neuigkeiten und Erkenntnisse auf dem Laufenden bleiben. Bitte tragen Sie mich in die Newsletter-Liste ein.%0D%0A%0D%0AE-Mail: ",
+  "newsletterThanks": "Vielen Dank"
+}

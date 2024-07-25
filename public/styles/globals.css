@@ -187,14 +187,12 @@
   }
 }
 
-
-/* Ensure the footer elements are aligned in one row between 768px and 1120px */
-@media (min-width: 768px) and (max-width: 1280px) {
+/* Ensure the footer elements are aligned vertically between 768px and 1281px */
+@media (min-width: 768px) and (max-width: 1281px) {
   .footer-container {
     display: flex;
-    flex-direction: row; /* Changes from column to row for horizontal alignment */
-    justify-content: space-around; /* Distributes space evenly around each section */
-    align-items: center; /* Vertically centers content within each section */
+    flex-direction: column; /* Changes to column for vertical alignment */
+    align-items: center; /* Centers content */
   }
 
   .footer-container div {
@@ -212,6 +210,7 @@
     padding: 20px; /* Adds noticeable padding around the newsletter for emphasis */
   }
 }
+
 
 .team-grid-container {
  

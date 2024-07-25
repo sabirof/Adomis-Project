@@ -13,6 +13,9 @@ const Navbar = () => {
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 1024);
+      if (window.innerWidth > 1024) {
+        setMenuOpen(false);  // Close the menu if screen width is greater than 1024
+      }
     };
 
     window.addEventListener('resize', handleResize);
@@ -113,7 +116,7 @@ const Navbar = () => {
                 <Link href="/project" className="hover:bg-accent p-2 rounded-md transition">
                   {t('navbar.project')}
                 </Link>
-                <ul className={`absolute ${isMobile ? 'left-full top-0' : 'left-0 mt-2'} md:left-auto md:right-full md:mt-0 md:ml-2 w-40 bg-white border border-gray-200 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300`}>
+                <ul className={`absolute ${isMobile ? 'left-full top-0' : 'left-0 mt-2'} md:left-auto md:right-full md:mt-0 md:ml-2 lg:left-0 lg:mt-2 w-40 bg-white border border-gray-200 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300`}>
 
                   <li>
                     <Link href="/project/interview-details" className="block px-3 py-1 text-sm hover:bg-accent rounded-t-md">

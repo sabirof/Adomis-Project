@@ -35,7 +35,7 @@ const AboutPage = () => {
   ];
 
   return (
-    <div className="about-container py-20">
+    <div className="about-container py-40">
   <div className="about-content container mx-auto px-4">
     <h2 className="about-title text-5xl text-center font-bold mb-12">{t('teamTitle')}</h2>
     <div className="about-description text-center text-lg mb-12 max-w-3xl mx-auto">

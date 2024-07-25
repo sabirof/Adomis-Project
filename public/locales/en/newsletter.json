@@ -1,9 +1,12 @@
 {
-    "newsletterTitle": "Sign up for our newsletter",
-    "newsletterDescription": "Stay up to date with the project progress, announcements, and exclusive content. Feel free to sign up with your email.",
-    "newsletterPlaceholder": "Enter your email",
-    "newsletterSubscribe": "Subscribe",
-    "newsletterPrivacy": "We care about the protection of your data. Read our",
-    "newsletterPrivacyLink": "Privacy Policy"
-  }
-  
+  "title": "Subscribe to our Newsletter!",
+  "description": "Stay updated with the latest news and updates from our research projects.",
+  "emailPlaceholder": "Enter your email",
+  "subscribeButton": "Subscribe",
+  "statusSuccess": "Subscription request email has been opened in your email client.",
+  "statusError": "Failed to subscribe. Please try again.",
+  "privacyPolicy": "Read our",
+  "privacyPolicyLink": "privacy policy",
+  "newsletterBody": "Dear Adomis Team,%0D%0A%0D%0AI would love to stay updated with all the latest news and insights. Please subscribe me to the newsletter list.%0D%0A%0D%0AEmail: ",
+  "newsletterThanks": "Thank you"
+}

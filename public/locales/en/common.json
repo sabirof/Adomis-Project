@@ -21,11 +21,11 @@
     "copyright": "&copy; 2024 Adomis. All rights reserved."
   },
   "contact": {
-    "title": "Contact Us",
+    "title": "Contact",
     "description": "Feel free to reach out to us using the form below."
   },
   "newsletter": {
-    "newsletterTitle": "Sign up for our newsletter",
+    "newsletterTitle": "Our Newsletter",
     "newsletterDescription": "Stay up to date with the project progress, announcements, and exclusive content. Feel free to sign up with your email.",
     "newsletterPlaceholder": "Enter your email",
     "newsletterSubscribe": "Subscribe",

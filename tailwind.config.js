@@ -12,6 +12,8 @@ module.exports = {
     lg: '1100px',
     xl: '1280px',
     '2xl': '1536px',
+    custom: '768px', // Custom breakpoint
+      customLg: '1281px', // Custom breakpoint
   },
     extend: {
       colors: {
