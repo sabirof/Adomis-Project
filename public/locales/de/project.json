@@ -1,15 +1,9 @@
 {
   "title": "Projekt",
-  "description": "Willkommen auf unserer Projektseite. Unten finden Sie weitere Informationen zu unseren Studien.",
-  "contentTitle": "Inhalt",
-  "contentDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-  "methodologyTitle": "Methodik",
-  "methodologyDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-  "findingsTitle": "Erwartete Ergebnisse",
-  "findingsDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "description": "Das Forschungsprojekt wird in zwei Phasen ausgeführt. Zunächst findet eine qualitative Interviewstudie statt. Darauf aufbauend, wird eine quantitative Surveybefragung unter Wissenschaftler_innen an vier Berliner Hochschulen durchgeführt. Unten finden Sie weitere Informationen zu den beiden Studien.",
   "interviewStudyTitle": "Interview Studie",
-  "interviewStudyDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "interviewStudyDescription": "Qualitative Interviewstudie, die in der ersten Phase des Forschungsprojekts durchgeführt wird.",
   "surveyStudiesTitle": "Umfragestudien",
-  "surveyStudiesDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "surveyStudiesDescription": "Quantitative Surveybefragung, die in der zweiten Phase des Forschungsprojekts durchgeführt wird.",
   "readMore": "Mehr erfahren"
 }

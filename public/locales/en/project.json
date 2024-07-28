@@ -1,15 +1,9 @@
 {
   "title": "Project",
-  "description": "Welcome to our project page. Below you will find more information about our studies.",
-  "contentTitle": "Content",
-  "contentDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-  "methodologyTitle": "Methodology",
-  "methodologyDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-  "findingsTitle": "Expected Findings",
-  "findingsDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "description": "The research project is carried out in two phases. First, a qualitative interview study will be conducted. Building on this, a quantitative survey will be conducted among academics at four Berlin universities. Below you will find further information on the two studies.",
   "interviewStudyTitle": "Interview Study",
-  "interviewStudyDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "interviewStudyDescription": "Qualitative interview study conducted in the first phase of the research project.",
   "surveyStudiesTitle": "Survey Studies",
-  "surveyStudiesDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "surveyStudiesDescription": "Quantitative survey conducted in the second phase of the research project.",
   "readMore": "Read more"
 }

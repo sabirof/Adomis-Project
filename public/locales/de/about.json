@@ -1,16 +1,32 @@
 {
-    "teamTitle": "ADOMiS Team",
-    "teamMembers": {
-      "profMirjam": "Prof. Dr. Mirjam Fischer",
-      "profMirjamRole": "Projektleitung",
-      "drEsto": "Dr. Esto Mader",
-      "drEstoRole": "Post-Doc",
-      "lea": "Lea Luttenberger",
-      "leaRole": "Doktorandin",
-      "selin": "Selin Akgöz",
-      "selinRole": "Wissenschaftliche Assistenz",
-      "celine": "Celine Vallender",
-      "celineRole": "Wissenschaftliche Assistenz"
+  "title": "Über uns",
+  "groupPictureSubtext": "Von links: Esto Mader, Celine Vallender, Mirjam Fischer, Lea Luttenberger und Selin Akgöz.",
+  "teamTitle": "ADOMiS Team",
+  "teamMembers": {
+    "mirjamFischer": {
+      "name": "Prof. Dr. Mirjam Fischer",
+      "role": "Projektleitung",
+      "description": "Prof. Dr. Mirjam Fischer ist Gastprofessorin für Gender Studies am Zentrum für transdisziplinäre Geschlechterstudien an der Humboldt-Universität zu Berlin und ist wissenschaftliche Mitarbeiterin am Institut für empirisch-analytische Forschung an der Goethe-Universität Frankfurt am Main. Sie ist promovierte Soziologin und arbeitet quantitativ-empirisch zu den Forschungsschwerpunkten Ungleichheiten der sexuellen und geschlechtlichen Vielfalt in sozialen Netzwerken, Familienbeziehungen und auf dem Arbeitsmarkt. Außerdem forscht sie zu Marginalisierungsmechanismen im Hochschulkontext, sowie zu Wissenschaftsfreiheit. Weitere Informationen finden Sie unter https://mirjamfischer.com/."
+    },
+    "estoMader": {
+      "name": "Dr. Esto Mader",
+      "role": "Post-Doc",
+      "description": "Dr. Esto Mader ist Postdoc für Gender Studies am Zentrum für transdisziplinäre Geschlechterstudien an der Humboldt-Universität zu Berlin. Esto Mader wurde promoviert in der Sozialwissenschaft und forscht und lehrt zu den Schwerpunkten Geschlechterverhältnisse auf dem Arbeitsmarkt und an Hochschulen, Queere, Trans*, Inter* und Nicht-binäre Studien, Anti-Diskriminierung und Intersektionalität sowie zu Wissenschaftskritik."
+    },
+    "leaLuttenberger": {
+      "name": "Lea Luttenberger",
+      "role": "Doktorandin",
+      "description": "Lea Luttenberger hat an der Universität Konstanz Psychologie studiert und promoviert zum Thema soziale Klasse und Zugehörigkeit in der Wissenschaft an der Humboldt-Universität zu Berlin. Aktuell entwickelt sie mittels eines partizipativen Prozesses Instrumente für die Erhebung sozialer Positionierung in quantitativen Befragungen. Hierbei vertritt sie einen kritischen Blick auf den Objektivitätsanspruch quantitativer Forschung."
+    },
+    "selinAkgoz": {
+      "name": "Selin Akgöz",
+      "role": "Wissenschaftliche Assistenz",
+      "description": "Selin Akgöz hat in Hamburg und Istanbul Politikwissenschaft studiert und macht aktuell den Master 'Gender, Intersektionalität und Politik' an der Freien Universität Berlin. Forschungsschwerpunkte sind materialistische und queerfeministische Theorien, koloniale Gesellschaftsverhältnisse und intersektionale Methoden in den Sozialwissenschaften."
+    },
+    "celineVallender": {
+      "name": "Celine Vallender",
+      "role": "Wissenschaftliche Assistenz",
+      "description": "Celine Vallender studiert an der Universität Potsdam im Master Psychologie mit dem Schwerpunkt Klinische Psychologie und hat bereits seit dem Bachelor ihr zweites Standbein in den Gender Studies gefunden. Forschungsschwerpunkte sind unter anderem feministische Forschungsethik & Wissenschaftskritik, kritische Psychologie, Neurodiversität sowie materialistischer & intersektionaler Queer-Feminismus."
     }
   }
-  
+}

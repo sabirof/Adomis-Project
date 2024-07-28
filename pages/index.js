@@ -13,7 +13,7 @@ const HomePage = ({ initialPosts }) => {
       <div className="pt-16">
         <div className="w-full max-w-7xl mx-auto">
           {/* Logo and Text Box Section */}
-          <div className="w-full flex flex-col items-center md:flex-row md:items-start md:justify-center mb-16 p-8 bg-purple-50 shadow-md rounded-md">
+          <div className="w-full flex flex-col items-center md:flex-row md:items-start md:justify-center mb-16 p-8 bg-gray-50 shadow-md rounded-md">
             <div className="flex-none mb-8 md:mb-0 md:mr-8">
               <Image src="/images/logo3.png" alt="Logo" width={300} height={300} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-contain" quality={100} />
             </div>
@@ -29,7 +29,7 @@ const HomePage = ({ initialPosts }) => {
           </div>
 
           {/* Blog Posts Section */}
-          <div className="text-left p-8 bg-purple-50 shadow-md rounded-md">
+          <div className="text-left p-8 bg-gray-50 shadow-md rounded-md">
   <div className="flex items-center mb-4">
     <h3 className="text-xl font-bold text-primary mr-2">{t('Latest Blog Posts')}</h3>
     <Link href="/news" passHref>

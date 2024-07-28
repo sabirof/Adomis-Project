@@ -34,7 +34,7 @@ const ProjectPage = () => {
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ['project'])),
+      ...(await serverSideTranslations(locale ?? 'en', ['project', 'common'])),
     },
     revalidate: 10,
   };

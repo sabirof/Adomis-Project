@@ -1,17 +1,32 @@
 {
-    "teamTitle": "ADOMiS Team",
-    "teamMembers": {
-      "profMirjam": "Prof. Dr. Mirjam Fischer",
-      "profMirjamRole": "Project Lead",
-      "drEsto": "Dr. Esto Mader",
-      "drEstoRole": "Postdoctoral fellow",
-      "lea": "Lea Luttenberger",
-      "leaRole": "Doctoral Fellow",
-      "selin": "Selin Akgöz",
-      "selinRole": "Research Assistant",
-      "celine": "Celine Vallender",
-      "celineRole": "Research Assistant"
-      
+  "title": "About Us",
+  "groupPictureSubtext": "From the left: Esto Mader, Celine Vallender, Mirjam Fischer, Lea Luttenberger and Selin Akgöz.",
+  "teamTitle": "ADOMiS Team",
+  "teamMembers": {
+    "mirjamFischer": {
+      "name": "Prof. Dr. Mirjam Fischer",
+      "role": "Project Lead",
+      "description": "Prof. Dr. Mirjam Fischer is a visiting professor of gender studies at the Center for Transdisciplinary Gender Studies at Humboldt-Universität zu Berlin and a research associate at the Institute for Empirical-Analytical Research at Goethe-University Frankfurt am Main. She holds a doctorate in sociology and conducts quantitative-empirical research on inequalities relating to sexual and gender diversity in social networks, family relationships and the labor market. Moreover, she works on marginalization mechanisms in the university context and academic freedom. Further information can be found at https://mirjamfischer.com/."
+    },
+    "estoMader": {
+      "name": "Dr. Esto Mader",
+      "role": "Postdoctoral fellow",
+      "description": "Dr. Esto Mader is a postdoc at the Center for Transdisciplinary Gender Studies at Humboldt-Universität zu Berlin. Esto Mader holds a PhD in social sciences and researches and teaches gender relations in the labor market and at universities, queer, trans*, inter* and non-binary studies, anti-discrimination and intersectionality as well as critical perspectives on science and knowledge production."
+    },
+    "leaLuttenberger": {
+      "name": "Lea Luttenberger",
+      "role": "Doctoral Fellow",
+      "description": "Lea Luttenberger studied psychology at the University of Konstanz and is doing her doctorate on social class and belonging in science at Humboldt-Universität zu Berlin. She is currently developing survey instruments for social positioning in quantitative surveys using a participatory process. In doing so, she takes a critical perspective on the claim to objectivity of quantitative research."
+    },
+    "selinAkgoz": {
+      "name": "Selin Akgöz",
+      "role": "Research Assistant",
+      "description": "Selin Akgöz studied political science in Hamburg and Istanbul and is currently doing a Master's degree in 'Gender, Intersectionality and Politics' at the Free University of Berlin. The main research focus is on materialist and queer-feminist theories, colonial social relations and intersectional methods in the social sciences."
+    },
+    "celineVallender": {
+      "name": "Celine Vallender",
+      "role": "Research Assistant",
+      "description": "Celine Vallender is studying for a master's degree in psychology at the University of Potsdam, specializing in clinical psychology, with a focus on gender studies. Her research interests include feminist research ethics and critical perspectives on science, critical psychology, neurodiversity and materialist and intersectional queer feminism."
     }
   }
-  
+}

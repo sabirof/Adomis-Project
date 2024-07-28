@@ -20,7 +20,8 @@
     "quickLinks": "Schnellzugriff",
     "contactTitle": "Kontaktieren Sie uns",
     "contactDetails": "Email: info@adomis-project.de\nTelefon: 030 209346200\nAdresse: Georgenstraße 47, 10117 Berlin",
-    "copyright": "&copy; 2024 Adomis. Alle Rechte vorbehalten."
+    "copyright": "&copy; 2024 Adomis. Alle Rechte vorbehalten.",
+    "stayUpdated": "Bleiben Sie auf dem Laufenden über den Fortschritt des Projekts und Ankündigungen."
   },
   "contact": {
     "title": "Kontakt",
@@ -37,5 +38,5 @@
   "news": {
     "title": "Aktuelles"
   },
-  "fundedBy": "Gefördert vom"
+  "fundedBy": "Gefördert von"
 }

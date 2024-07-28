@@ -28,12 +28,20 @@ const Navbar = () => {
         {/* Logo Section */}
         <div className={`md:pt-40 lg:pt-20 ${menuOpen && isMobile ? 'pt-20' : ''} md:absolute md:right-0 md:top-1/2 md:transform md:-translate-y-1/2 flex justify-center`}>
           <Link href="/">
-            <Image src="/images/logo2.png" alt="Logo" width={menuOpen && isMobile ? 400 : 300} height={menuOpen && isMobile ? 400 : 250} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" priority />
+            <Image 
+              src="/images/logo2.png" 
+              alt="Logo" 
+              width={menuOpen && isMobile ? 200 : 300} 
+              height={menuOpen && isMobile ? 100 : 150} 
+              sizes="(max-width: 768px) 50vw, (max-width: 1200px) 50vw, 33vw" 
+              priority 
+              className={`${menuOpen && isMobile ? 'mt-4' : ''}`} // Add margin-top on mobile when menu is open
+            />
           </Link>
         </div>
 
         {/* Hamburger Menu for Mobile */}
-        <div className={`pt-20 ${menuOpen ? 'md-900:pt-30' : ''} hamburger`}>
+        <div className={`pt-20 ${menuOpen ? 'md-900:pt-20' : ''} hamburger`}>
           <button
             onClick={() => setMenuOpen(!menuOpen)}
             className="text-black focus:outline-none"
@@ -100,8 +108,8 @@ const Navbar = () => {
 
         {/* Navbar Section */}
         <nav className={`w-full ${menuOpen ? 'block' : 'hidden'} md:w-2/3 ${!isMobile ? 'lg:block' : ''}`}>
-          <div className={`container mx-auto flex flex-col ${menuOpen ? 'gap-6 pt-20 ' : 'md:flex-row pt-4'} md:justify-start items-center gap-4`}>
-            <ul className={`text-black flex flex-col ${menuOpen ? 'gap-6' : 'md:flex-row gap-6'} text-lg`}>
+          <div className={`container mx-auto flex flex-col ${menuOpen ? 'gap-6 pt-10 ' : 'md:flex-row pt-4'} md:justify-start items-start ${!menuOpen ? 'pl-5' : 'pl-40'} pt-5 gap-4`}>
+            <ul className={`text-black flex flex-col ${menuOpen ? 'gap-6' : 'md:flex-row gap-6 '} text-lg`}>
               <li>
                 <Link href="/" className="hover:bg-accent p-2 rounded-md transition">
                   {t('navbar.home')}
@@ -116,8 +124,7 @@ const Navbar = () => {
                 <Link href="/project" className="hover:bg-accent p-2 rounded-md transition">
                   {t('navbar.project')}
                 </Link>
-                <ul className={`absolute ${isMobile ? 'left-full top-0' : 'left-0 mt-2'} md:left-auto md:right-full md:mt-0 md:ml-2 lg:left-0 lg:mt-2 w-40 bg-white border border-gray-200 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300`}>
-
+                <ul className={`absolute ${isMobile ? 'left-full top-0' : 'right-0 mt-2'} md:right-auto md:left-full md:mt-0 md:ml-2 lg:left-0 lg:mt-2 w-40 bg-white border border-gray-200 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300`}>
                   <li>
                     <Link href="/project/interview-details" className="block px-3 py-1 text-sm hover:bg-accent rounded-t-md">
                       {t('navbar.interviewStudies')}

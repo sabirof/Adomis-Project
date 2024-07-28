@@ -17,7 +17,7 @@ const Layout = ({ children }) => {
       <div className="flex items-center justify-start py-4">
         <div className="flex items-center">
           <p className="ml-4">{t('fundedBy')}</p>
-          <Image src="/images/bua-logo.png" alt="Berlin University Alliance" width={300} height={300} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+          <Image src="/images/bua-logo.png" alt="Berlin University Alliance" width={150} height={150} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
           
         </div>
       </div>
