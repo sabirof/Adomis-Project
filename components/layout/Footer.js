@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="footer-container flex flex-col items-center pt-4 justify-center">
         {/* Text Section */}
         <div className="w-full mb-8 p-4 rounded-lg text-center">
-  <p className="text-3xl md:text-2xl font-bold leading-relaxed text-white">{t('footer.stayUpdated')}</p>
+  <p className="text-xl md:text-2xl font-bold leading-relaxed text-white">{t('footer.stayUpdated')}</p>
 </div>
 
         {/* Contact and Newsletter Section */}

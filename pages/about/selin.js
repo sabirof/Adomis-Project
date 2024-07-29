@@ -2,7 +2,7 @@ import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Image from 'next/image';
 
-const Esto = () => {
+const Selin = () => {
   const { t } = useTranslation('about');
 
   return (
@@ -33,4 +33,4 @@ export async function getStaticProps({ locale }) {
   };
 }
 
-export default Esto;
+export default Selin;

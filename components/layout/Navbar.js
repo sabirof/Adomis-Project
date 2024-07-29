@@ -115,11 +115,11 @@ const Navbar = () => {
                   {t('navbar.home')}
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="/vision" className="hover:bg-accent p-2 rounded-md transition">
                   {t('navbar.vision')}
                 </Link>
-              </li>
+              </li> */}
               <li className="relative group">
                 <Link href="/project" className="hover:bg-accent p-2 rounded-md transition">
                   {t('navbar.project')}
