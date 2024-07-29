@@ -8,6 +8,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 const Newsletter = () => {
   const { t } = useTranslation('newsletter');
+  const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [status, setStatus] = useState('');
 
@@ -16,7 +17,7 @@ const Newsletter = () => {
     setStatus('');
 
     try {
-      const mailtoLink = `mailto:info@adomis-project.de?subject=Newsletter Subscription Request&body=${t('newsletterBody')}${email}%0D%0A%0D%0A${t('newsletterThanks')}`;
+      const mailtoLink = `mailto:info@adomis-project.de?subject=Newsletter Subscription Request&body=${t('newsletterBody')}%0D%0A${t('name')}: ${name}%0D%0A${t('email')}: ${email}%0D%0A%0D%0A${t('newsletterThanks')}`;
 
       window.location.href = mailtoLink;
       setStatus(t('statusSuccess'));
@@ -34,11 +35,20 @@ const Newsletter = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex items-center justify-center py-20 ">
+      <main className="flex items-center justify-center py-20">
         <div className="bg-primary text-white p-20 rounded shadow-lg w-full max-w-lg">
           <h1 className="text-3xl font-bold mb-4 text-center">{t('title')}</h1>
           <p className="mb-8 text-center">{t('description')}</p>
           <form onSubmit={handleSubmit} className="flex flex-col items-center">
+            <input
+              type="text"
+              name="name"
+              placeholder={t('namePlaceholder')}
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              required
+              className="p-2 mb-4 w-full max-w-xs rounded text-black"
+            />
             <input
               type="email"
               name="email"
@@ -48,7 +58,7 @@ const Newsletter = () => {
               required
               className="p-2 mb-4 w-full max-w-xs rounded text-black"
             />
-            <button type="submit" className="p-2 bg-secondary hover:bg-green-400 text-gray-600 hover:text-gray-800  rounded shadow w-full max-w-xs">
+            <button type="submit" className="p-2 bg-secondary hover:bg-green-400 text-gray-600 hover:text-gray-800 rounded shadow w-full max-w-xs">
               {t('subscribeButton')}
             </button>
           </form>

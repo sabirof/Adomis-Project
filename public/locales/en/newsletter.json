@@ -1,6 +1,7 @@
 {
   "title": "Subscribe to our Newsletter!",
   "description": "Stay updated with the latest news and updates from our research projects.",
+  "namePlaceholder": "Enter your name",
   "emailPlaceholder": "Enter your email",
   "subscribeButton": "Subscribe",
   "statusSuccess": "Subscription request email has been opened in your email client.",

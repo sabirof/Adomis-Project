@@ -1,6 +1,7 @@
 {
   "title": "Abonnieren Sie unseren Newsletter!",
   "description": "Bleiben Sie mit den neuesten Nachrichten und Updates zu unseren Forschungsprojekten auf dem Laufenden.",
+  "namePlaceholder": "Geben Sie Ihren Namen ein",
   "emailPlaceholder": "Geben Sie Ihre E-Mail ein",
   "subscribeButton": "Abonnieren",
   "statusSuccess": "Die Anforderung zum Abonnieren wurde in Ihrem E-Mail-Client geöffnet.",
