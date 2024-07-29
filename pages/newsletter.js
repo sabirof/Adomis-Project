@@ -17,7 +17,7 @@ const Newsletter = () => {
     setStatus('');
 
     try {
-      const mailtoLink = `mailto:info@adomis-project.de?subject=Newsletter Subscription Request&body=${t('newsletterBody')}%0D%0A${t('name')}: ${name}%0D%0A${t('email')}: ${email}%0D%0A%0D%0A${t('newsletterThanks')}`;
+      const mailtoLink = `mailto:info@adomis-project.de?subject=Newsletter Subscription Request&body=Dear Adomis Team,%0D%0A%0D%0AI would love to stay updated with all the latest news and insights. Please subscribe me to the newsletter list.%0D%0A%0D%0A${t('name')}: ${name}%0D%0A${t('email')}: ${email}%0D%0A%0D%0AThank you.`;
 
       window.location.href = mailtoLink;
       setStatus(t('statusSuccess'));
