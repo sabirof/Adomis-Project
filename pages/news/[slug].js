@@ -52,8 +52,8 @@ export const getStaticProps = async ({ params, locale, preview = false }) => {
       ...(await serverSideTranslations(locale ?? 'en', ['common'])),
       post: response?.items?.[0],
       preview,
-      revalidate: 60,
     },
+    revalidate: 60,
   };
 };
 
