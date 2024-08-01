@@ -9,8 +9,8 @@
     "contact": "Kontakt",
     "privacyPolicy": "Datenschutz",
     "vision": "Vision",
-    "interviewStudies": "Interview-Studien",
-    "surveyStudies": "Umfrage-Studien"
+    "interviewStudies": "Interviewstudie",
+    "surveyStudies": "Befragungsstudie"
     
   },
   "footer": {
@@ -38,5 +38,10 @@
   "news": {
     "title": "Aktuelles"
   },
-  "fundedBy": "Gefördert von"
+  "fundedBy": "Gefördert von",
+  "latestNews": "Aktuelle Nachrichten",
+  "home": {
+    "title": "Diversität an Hochschulen empirisch erforschen",
+    "content": "Willkommen auf der Website unseres mixed-method Forschungsprojekts zu Diversität an Hochschulen. Wir sind ein sechsköpfiges, interdisziplinäres Team, welches Expertisen aus Soziologie, Gender Studies, Psychologie, Politik- und Kommunikationswissenschaft vereint. Ziel des Projekts ist es, Marginalisierungsmechanismen in Forschungskarrieren empirisch zu erforschen und Lösungsansätze für mehr Chancengleichheit im Wissenschaftssystem zu entwickeln. Intersektionale Perspektive und partizipative Prinzipien leiten unser Vorgehen. Expert_innen mit Betroffenenperspektiven sind in den qualitativen Interviewprozess, sowie die Entwicklung einer großangelegten quantitativen Befragung von Forschenden an vier Berliner Forschungseinrichtungen eingebunden."
+  }
 }

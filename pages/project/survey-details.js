@@ -5,10 +5,12 @@ const SurveyDetailsPage = () => {
   const { t } = useTranslation('project');
 
   return (
-    <div className="container mx-auto p-8">
-      <h2 className="text-3xl text-black font-bold mb-4">{t('surveyStudiesTitle')}</h2>
-      <p className="text-gray-700 text-lg">{t('surveyStudiesDescription')}</p>
-      {/* Add more detailed text here */}
+    <div className="container mx-auto py-20 px-6">
+      <div className="bg-white p-8 rounded-lg shadow-md max-w-4xl mx-auto">
+        <h2 className="text-3xl text-black text-center font-bold mb-4">{t('surveyStudiesTitle')}</h2>
+        <p className="text-lg text-center text-gray-700 mb-4">{t('surveyStudiesDescription')}</p>
+        <p className="text-lg text-center text-gray-700">{t('surveyStudyContent')}</p>
+      </div>
     </div>
   );
 };
@@ -16,7 +18,7 @@ const SurveyDetailsPage = () => {
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ['project'])),
+      ...(await serverSideTranslations(locale, ['project', 'common'])),
     },
     revalidate: 10,
   };

@@ -1,9 +1,11 @@
 {
   "title": "Projekt",
   "description": "Das Forschungsprojekt wird in zwei Phasen ausgeführt. Zunächst findet eine qualitative Interviewstudie statt. Darauf aufbauend, wird eine quantitative Surveybefragung unter Wissenschaftler_innen an vier Berliner Hochschulen durchgeführt. Unten finden Sie weitere Informationen zu den beiden Studien.",
-  "interviewStudyTitle": "Interview Studie",
+  "interviewStudyTitle": "Interviewstudie",
   "interviewStudyDescription": "Qualitative Interviewstudie, die in der ersten Phase des Forschungsprojekts durchgeführt wird.",
-  "surveyStudiesTitle": "Umfragestudien",
+  "surveyStudiesTitle": "Befragungsstudie",
   "surveyStudiesDescription": "Quantitative Surveybefragung, die in der zweiten Phase des Forschungsprojekts durchgeführt wird.",
-  "readMore": "Mehr erfahren"
+  "readMore": "Mehr erfahren",
+  "interviewStudyContent": "Expert_inneninterviews mit Personen, die sich selbst als (mehrfach)marginalisiert in Wissenschaftssystem verorten, bilden das Fundament dieses Forschungsprojekts. Zum einen werden quantitative Erhebungsinstrumente für die soziale Positioniertheit von Personen partizipativ entwickelt, damit diese mittels relevanter soziodemographischer Merkmale adäquat abgebildet werden kann. Dabei findet das Delphi-Verfahren Anwendung. Zu anderen werden Barrieren im Wissenschaftssystem mit den Expert_innen erarbeitet. Im gesamten Projektverlauf ist vorgesehen, dass Betroffenenperspektiven immer wieder miteinbezogen werden (z.B. beim Entwickeln von Forschungsfragen, Informationsbedarf der Communities).",
+  "surveyStudyContent": "In der Befragungsstudie werden die retrospektiven und geplanten Laufbahnen von Forschenden an den Institutionen der Berlin-University Alliance (BUA) unter Promovierenden, Postdoktorand*innen und Professor*innen erforscht. Neben den Laufbahnen und einem Fokus auf mentale Gesundheit, und Belonging werden Einstellungen zu Diversität, Objektivität und Meritokratie in der Wissenschaft (ADOMiS) unter Forschenden erfasst. Diskriminierungserfahrungen und Einstellungen marginalisierter Forschender selbst (z.B. internalisierte Stigmatisierung, negatives Selbstbild) werden als psychologische Wirkungsmechanismen berücksichtigt. Ziel dieses Forschungsprojekts ist es, eine empirisch belastbare Grundlage für langfristigen institutionellen Wandel an Universitäten zu schaffen."
 }

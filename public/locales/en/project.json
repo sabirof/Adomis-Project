@@ -1,9 +1,11 @@
 {
   "title": "Project",
   "description": "The research project is carried out in two phases. First, a qualitative interview study will be conducted. Building on this, a quantitative survey will be conducted among academics at four Berlin universities. Below you will find further information on the two studies.",
-  "interviewStudyTitle": "Interview Study",
+  "interviewStudyTitle": "Interview study",
   "interviewStudyDescription": "Qualitative interview study conducted in the first phase of the research project.",
-  "surveyStudiesTitle": "Survey Studies",
+  "surveyStudiesTitle": "Survey study",
   "surveyStudiesDescription": "Quantitative survey conducted in the second phase of the research project.",
-  "readMore": "Read more"
+  "readMore": "Read more",
+  "interviewStudyContent": "Expert interviews with people who position themselves as (multiply) marginalized in the academic system form the basis of this research project. On the one hand, quantitative survey instruments for the social positioning of individuals are developed in a participatory manner, so that the social positioning can be adequately mapped using relevant socio-demographic characteristics. The Delphi method is used for this process. In addition, barriers in the academic system will be developed with the experts. Throughout the course of the project, there are opportunities to include the perspectives of people from affected communities (e.g., in the development of research questions, information needs in the communities).",
+  "surveyStudyContent": "The survey investigates the retrospective and planned careers of researchers at the Berlin University Alliance (BUA) institutes (Humboldt-Universität zu Berlin, Freie Universität, Technische Universität and Charité) by conducting a survey among doctoral students, mid-level faculty and professors. In addition to their careers and a focus on mental health and burnout, attitudes towards diversity, objectivity and meritocracy in science (ADOMiS) are recorded among researchers. Experiences of discrimination and attitudes of marginalized researchers themselves (e.g. internalized stigmatization, negative self-image) are considered as psychological mechanisms. The aim of this research project is to create an empirically robust basis for long-term institutional change toward inclusivity at universities."
 }

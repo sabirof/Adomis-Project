@@ -8,8 +8,8 @@
     "contact": "Contact",
     "privacyPolicy": "Privacy Policy",
     "vision": "Vision",
-    "interviewStudies": "Interview Studies",
-    "surveyStudies": "Survey Studies"
+    "interviewStudies": "Interview study",
+    "surveyStudies": "Survey study"
   },
   "footer": {
     "description": "Footer content goes here",
@@ -36,5 +36,10 @@
   "news": {
     "title": "News"
   },
-  "fundedBy": "Funded by"
+  "fundedBy": "Funded by",
+  "latestNews": "Latest News",
+  "home": {
+    "title": "Empirical research on diversity at universities",
+    "content": "Welcome to the website of our mixed-method research project on diversity at universities. We are a six-member, interdisciplinary team that combines expertise from sociology, gender studies, psychology, political and communication science. The aim of the project is to empirically investigate marginalization mechanisms in research careers and to develop solutions for more equitable opportunities in the academic system. Our approach is guided by an intersectional perspective and participatory principles. Experts with firsthand experiences of marginalization in academia are involved in the qualitative interview process, as well as in the development of a large-scale quantitative survey of researchers at four Berlin research institutions."
+  }
 }

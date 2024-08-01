@@ -7,10 +7,7 @@ const Footer = () => {
   return (
     <footer className="bg-primary p-8 text-white w-full">
       <div className="footer-container flex flex-col items-center pt-4 justify-center">
-        {/* Text Section */}
-        <div className="w-full mb-8 p-4 rounded-lg text-center">
-  <p className="text-xl md:text-2xl font-bold leading-relaxed text-white">{t('footer.stayUpdated')}</p>
-</div>
+        
 
         {/* Contact and Newsletter Section */}
         <div className="w-full flex flex-col items-center space-y-8">
@@ -21,6 +18,7 @@ const Footer = () => {
           </div>
 
           {/* Newsletter Section */}
+          
           <div className="w-full flex flex-col items-center p-4 rounded-lg newsletter-section">
             <h3 className="text-3xl md:text-2xl font-bold mb-4 text-center">{t('newsletter.newsletterTitle')}</h3>
             <Link href="/newsletter">
@@ -31,10 +29,15 @@ const Footer = () => {
                 </svg>
               </div>
             </Link>
-          </div>
+            </div>
+            {/* Text Section */}
+        <div className="w-full mb-8 p-4 rounded-sm text-center">
+  <p className="text-base md:text-basefont-bold leading-relaxed text-white">{t('footer.stayUpdated')}</p>
+</div>
+          
         </div>
       </div>
-      <div className="text-center mt-16 text-xl md:text-lg">
+      <div className="text-center mt-16 text md:text-lg">
         <p>© 2024 Sabir Maharramov and Pia Chwalczyk. All rights reserved.</p>
         <p>Developer: Sabir Maharramov - <Link href="mailto:maharram.sabir@gmail.com" className="text-blue-400 underline">maharram.sabir[at]gmail.com</Link><br />
           Designer: Pia Chwalczyk - <Link href="mailto:piachwalczyk@icloud.com" className="text-blue-400 underline">piachwalczyk[at]icloud.com</Link>
