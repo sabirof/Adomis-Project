@@ -10,6 +10,7 @@ const MyApp = ({ Component, pageProps }) => {
     <NoSSRLayout>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Willkommen beim Adomis Projekt. Unsere Webseite ist jetzt live!" /> {/* Add your meta description here */}
         <title>Adomis</title> {/* Optional: Set a default title for your app */}
       </Head>
       <Component {...pageProps} />

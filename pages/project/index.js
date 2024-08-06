@@ -14,7 +14,7 @@ const ProjectPage = () => {
       <section className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
         <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
           <h3 className="text-2xl font-semibold mb-4">{t('interviewStudyTitle')}</h3>
-          <p className="text-gray-700 mb-6">{t('interviewStudyDescription')}</p>
+          <p className="text-gray-700 mb-6">{t('interviewStudyDescription').replace("Qualitative Interviewstudie, die in der ersten Phase des Forschungsprojekts durchgeführt wird.", "")}</p>
           <Link href="/project/interview-details" passHref>
             <button className="bg-accent text-gray-600 px-4 py-2 rounded hover:bg-green-400 transition-colors duration-200">
               {t('readMore')}
@@ -23,7 +23,7 @@ const ProjectPage = () => {
         </div>
         <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
           <h3 className="text-2xl font-semibold mb-4">{t('surveyStudiesTitle')}</h3>
-          <p className="text-gray-700 mb-6">{t('surveyStudiesDescription')}</p>
+          <p className="text-gray-700 mb-6">{t('surveyStudiesDescription').replace("Quantitative Surveybefragung, die in der zweiten Phase des Forschungsprojekts durchgeführt wird.", "")}</p>
           <Link href="/project/survey-details" passHref>
             <button className="bg-accent text-gray-600 px-4 py-2 rounded hover:bg-green-400 transition-colors duration-200">
               {t('readMore')}
